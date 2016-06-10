@@ -1,0 +1,992 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"bui",
+				"buildingID〔variable〕"
+			],
+			[
+				"amen",
+				"amenity"
+			],
+			[
+				"font-s",
+				"font-style"
+			],
+			[
+				"padd",
+				"padding-right"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"tex",
+				"text-decoration"
+			],
+			[
+				"margin",
+				"margin-right"
+			],
+			[
+				"marg",
+				"margin-left"
+			],
+			[
+				"backg",
+				"background-color"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"class",
+				"className"
+			],
+			[
+				"paddin",
+				"padding-left"
+			],
+			[
+				"pr",
+				"primary-color"
+			],
+			[
+				"bac",
+				"background-color"
+			],
+			[
+				"list-st",
+				"list-style-type"
+			],
+			[
+				"cl",
+				"className"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"backgr",
+				"background-image"
+			],
+			[
+				"Build",
+				"Buildings"
+			],
+			[
+				"buidl",
+				"buildings"
+			],
+			[
+				"build",
+				"buildings"
+			],
+			[
+				"Schem",
+				"Schemas"
+			],
+			[
+				"Schemas",
+				"Schemas.Rating"
+			],
+			[
+				"login",
+				"loginElements〔variable〕"
+			],
+			[
+				"genera",
+				"generalPasswordValidation〔function〕"
+			],
+			[
+				"valid",
+				"validatePassword〔function〕"
+			],
+			[
+				"handle",
+				"handleSubmit"
+			],
+			[
+				"vali",
+				"validatePassword〔function〕"
+			],
+			[
+				"compo",
+				"composeWithTracker"
+			],
+			[
+				"this",
+				"thisBuilding〔variable〕"
+			],
+			[
+				"buil",
+				"buildings〔variable〕"
+			],
+			[
+				"Bui",
+				"Building"
+			],
+			[
+				"Coll",
+				"CollegeList"
+			],
+			[
+				"Colle",
+				"Colleges"
+			],
+			[
+				"short",
+				"shortName〔variable〕"
+			],
+			[
+				"padding",
+				"padding-bottom"
+			],
+			[
+				"se",
+				"selectRoute"
+			],
+			[
+				"selec",
+				"selectRoute〔function〕"
+			],
+			[
+				"get",
+				"getRouteName"
+			],
+			[
+				"abou",
+				"aboutRoutes"
+			],
+			[
+				"Building",
+				"BuildingAmenities"
+			],
+			[
+				"brows",
+				"browserSync〔variable〕"
+			],
+			[
+				"mini",
+				"minifyCSS〔function〕"
+			],
+			[
+				"minif",
+				"minifyJS"
+			],
+			[
+				"inject",
+				"injectCSS"
+			],
+			[
+				"bundle",
+				"bundleJS"
+			],
+			[
+				"rendered",
+				"renderedComponent"
+			],
+			[
+				"render",
+				"renderToString"
+			],
+			[
+				"rendere",
+				"renderedComponent"
+			],
+			[
+				"article",
+				"articleAuthor"
+			],
+			[
+				"articl",
+				"articleText"
+			],
+			[
+				"push",
+				"pushArticle"
+			],
+			[
+				"status",
+				"statusbar〔variable〕"
+			],
+			[
+				"tab",
+				"tabBar"
+			],
+			[
+				"artic",
+				"articles"
+			],
+			[
+				"align",
+				"alignSelf"
+			],
+			[
+				"sele",
+				"selectedArticle"
+			],
+			[
+				"new",
+				"newCount"
+			],
+			[
+				"Sign",
+				"SignUp"
+			],
+			[
+				"Docume",
+				"DocumentTitle"
+			],
+			[
+				"College",
+				"CollegeList"
+			],
+			[
+				"searc",
+				"searchBarValue"
+			],
+			[
+				"copy",
+				"copyHTML"
+			],
+			[
+				"w",
+				"watchifyOpts"
+			],
+			[
+				"watch",
+				"watchify〔variable〕"
+			],
+			[
+				"wa",
+				"watchify"
+			],
+			[
+				"wat",
+				"watchifyOpts"
+			],
+			[
+				"watc",
+				"watchify〔variable〕"
+			],
+			[
+				"college",
+				"collegeID"
+			],
+			[
+				"key",
+				"keyCode"
+			],
+			[
+				"Sear",
+				"SearchExample"
+			],
+			[
+				"bund",
+				"bundler"
+			],
+			[
+				"Colleg",
+				"CollegeSearch"
+			],
+			[
+				"colle",
+				"collegeID"
+			],
+			[
+				"Buil",
+				"BuildingAmenities"
+			],
+			[
+				"Documen",
+				"DocumentImageBackground"
+			],
+			[
+				"prop",
+				"propTypes"
+			],
+			[
+				"Docum",
+				"DocumentTitle"
+			],
+			[
+				"Doc",
+				"DocumentTitle"
+			],
+			[
+				"Ra",
+				"RatingStars"
+			],
+			[
+				"cons",
+				"constructor"
+			],
+			[
+				"Ame",
+				"AmenityItem"
+			],
+			[
+				"browser",
+				"browserSync"
+			],
+			[
+				"ha",
+				"handleButtonPressed"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"com",
+				"complete"
+			],
+			[
+				"hand",
+				"handleButtonPress"
+			],
+			[
+				"c",
+				"children"
+			],
+			[
+				"src",
+				"srcFile"
+			],
+			[
+				"commen",
+				"commentNodes"
+			],
+			[
+				"look",
+				"lookupWord"
+			],
+			[
+				"loo",
+				"lookUpWordWithIndexInArray"
+			],
+			[
+				"p",
+				"prototype"
+			],
+			[
+				"words",
+				"wordsArray"
+			],
+			[
+				"toke",
+				"tokenizeAndStem"
+			],
+			[
+				"results",
+				"resultsArray"
+			],
+			[
+				"poly",
+				"polySyllables"
+			],
+			[
+				"F",
+				"FKRA"
+			],
+			[
+				"SMOG",
+				"SMOGindicator"
+			],
+			[
+				"educat",
+				"educationLevelsRequired"
+			],
+			[
+				"educ",
+				"educationLevelsRequired"
+			],
+			[
+				"ed",
+				"educationLevelRequired"
+			],
+			[
+				"close",
+				"closestSquare"
+			],
+			[
+				"square",
+				"squareRoot"
+			],
+			[
+				"word",
+				"wordSyllables"
+			],
+			[
+				"sylla",
+				"syllableArray"
+			],
+			[
+				"syll",
+				"syllables"
+			],
+			[
+				"syllabel",
+				"syllableArray"
+			],
+			[
+				"sy",
+				"syllableIndex"
+			],
+			[
+				"sente",
+				"sentences"
+			],
+			[
+				"senc",
+				"sentencesWords"
+			],
+			[
+				"sene",
+				"sentences"
+			],
+			[
+				"senten",
+				"sentence"
+			],
+			[
+				"sece",
+				"sentencesWords"
+			],
+			[
+				"sent",
+				"sentence"
+			],
+			[
+				"sen",
+				"sentences"
+			],
+			[
+				"Str",
+				"string"
+			],
+			[
+				"read",
+				"readTextFile"
+			],
+			[
+				"pest",
+				"pestImage"
+			],
+			[
+				"for",
+				"form	Tag"
+			],
+			[
+				"email",
+				"emailAddress"
+			],
+			[
+				"onc",
+				"onclick	Attr"
+			],
+			[
+				"comp",
+				"completionPercentage"
+			],
+			[
+				"file",
+				"fileName"
+			],
+			[
+				"s",
+				"src"
+			],
+			[
+				"app",
+				"appName"
+			],
+			[
+				"colo",
+				"color"
+			],
+			[
+				"border",
+				"border-collapse"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 400.0,
+		"last_filter": "insta",
+		"selected_items":
+		[
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"upgrade",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"isnta",
+				"Package Control: Install Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"rem",
+				"Package Control: Remove Package"
+			],
+			[
+				"markdo",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"markd",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"markdw",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"pretty",
+				"Pretty JSON: Format (Pretty Print) JSON"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"prefs",
+				"Preferences: SublimeLinter Settings – User"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"color",
+				"Colorsublime: Install Theme"
+			],
+			[
+				"colorsublime",
+				"Colorsublime: Browse Themes"
+			],
+			[
+				"colo",
+				"Colorsublime: Install Theme"
+			],
+			[
+				"packa",
+				"Package Control: Install Package"
+			],
+			[
+				"sublimelinter settin",
+				"Preferences: SublimeLinter Settings – User"
+			],
+			[
+				"",
+				"About"
+			]
+		],
+		"width": 529.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"print(\"hi\")",
+			"ls",
+			"cl",
+			"cls",
+			"clear",
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/teoboley/Projects/Websites/Teo Boley/site",
+		"/Users/teoboley/Projects/Websites/Teo Boley/site/_layouts",
+		"/Users/teoboley/Projects/Websites/Teo Boley/site/_posts",
+		"/Users/teoboley/Projects/Websites/Teo Boley/site/_projects",
+		"/Users/teoboley/Projects/Websites/Teo Boley/site/_sass",
+		"/Users/teoboley/Projects/Websites/Teo Boley/site/css"
+	],
+	"file_history":
+	[
+		"/Users/teoboley/Projects/Websites/Teo Boley/site/_includes/footer.html",
+		"/Users/teoboley/Projects/Websites/Teo Boley/site/_layouts/default.html",
+		"/Users/teoboley/Projects/Websites/Teo Boley/site/_layouts/page.html",
+		"/Users/teoboley/Projects/Websites/Teo Boley/site/_layouts/post.html",
+		"/Users/teoboley/Projects/Websites/Teo Boley/site/index.html",
+		"/Users/teoboley/Projects/Websites/Teo Boley/site/portfolio.html",
+		"/Users/teoboley/Projects/Websites/Teo Boley/site/_sass/_layout.scss",
+		"/Users/teoboley/Projects/Websites/Teo Boley/site/_sass/_base.scss",
+		"/Users/teoboley/Projects/Websites/Teo Boley/site/css/main.scss",
+		"/Users/teoboley/Projects/Websites/Teo Boley/site/_includes/header.html",
+		"/Users/teoboley/Projects/Websites/Teo Boley/site/_includes/head.html",
+		"/Users/teoboley/Projects/Websites/Teo Boley/site/_projects/college-housing.md",
+		"/Users/teoboley/Projects/Websites/Teo Boley/site/_posts/2016-06-08-New Server.md",
+		"/Users/teoboley/Projects/Websites/Teo Boley/site/_layouts/project.html",
+		"/Users/teoboley/Projects/Websites/Teo Boley/site/_config.yml",
+		"/Users/teoboley/Projects/Websites/Teo Boley/site/blog.html",
+		"/Users/teoboley/Projects/Websites/Teo Boley/site/_posts/2016-06-09-New Server.md",
+		"/Users/teoboley/Projects/Websites/Teo Boley/site/_projects/item1.md",
+		"/Users/teoboley/Projects/Websites/Teo Boley/site/_portfolio/2016-06-09-item1.md",
+		"/Users/teoboley/Projects/Websites/Teo Boley/site/portfolio/_posts/portfolio 1.md",
+		"/Users/teoboley/.zshrc",
+		"/Users/teoboley/zshrc",
+		"/Users/teoboley/Projects/School/CI/team15-drexel-15/college-housing/server/config.js",
+		"/Users/teoboley/Projects/School/CI/team15-drexel-15/college-housing/ui/components/reviews.jsx",
+		"/Users/teoboley/Projects/School/CI/team15-drexel-15/college-housing/client/stylesheets/style.scss",
+		"/Users/teoboley/Projects/School/CI/team15-drexel-15/college-housing/client/stylesheets/components/college.scss",
+		"/Users/teoboley/Projects/School/CI/team15-drexel-15/college-housing/ui/components/building.jsx",
+		"/Users/teoboley/Projects/School/CI/team15-drexel-15/college-housing/client/stylesheets/components/front_page.scss",
+		"/Users/teoboley/Projects/School/CI/team15-drexel-15/college-housing/client/stylesheets/components/reviews.scss",
+		"/Users/teoboley/Projects/School/CI/team15-drexel-15/college-housing/client/stylesheets/components/college_list.scss",
+		"/Users/teoboley/Projects/School/CI/team15-drexel-15/college-housing/client/stylesheets/components/building.scss",
+		"/Users/teoboley/Projects/School/CI/team15-drexel-15/college-housing/client/stylesheets/components/rating.scss",
+		"/Users/teoboley/Projects/School/CI/team15-drexel-15/college-housing/ui/components/college.jsx",
+		"/Users/teoboley/Projects/School/CI/team15-drexel-15/college-housing/ui/components/front_page.jsx",
+		"/Users/teoboley/Projects/School/CI/team15-drexel-15/college-housing/ui/layouts/about.jsx",
+		"/Users/teoboley/Projects/School/CI/team15-drexel-15/college-housing/client/stylesheets/components/about.scss",
+		"/Users/teoboley/Projects/School/CI/team15-drexel-15/college-housing/api/schemas.js",
+		"/Users/teoboley/Projects/School/CI/team15-drexel-15/college-housing/client/stylesheets/components/nav.scss",
+		"/Users/teoboley/Projects/School/CI/team15-drexel-15/college-housing/ui/components/college_list.jsx",
+		"/Users/teoboley/Projects/School/CI/team15-drexel-15/college-housing/client/stylesheets/config.scss",
+		"/Users/teoboley/Projects/School/CI/team15-drexel-15/college-housing/client/stylesheets/front_page.scss",
+		"/Users/teoboley/Projects/School/CI/team15-drexel-15/college-housing/client/stylesheets/nav.scss",
+		"/Users/teoboley/Projects/School/CI/team15-drexel-15/college-housing/client/stylesheets/college_list.scss",
+		"/Users/teoboley/Projects/School/CI/team15-drexel-15/college-housing/client/stylesheets/rating.scss",
+		"/Users/teoboley/Projects/School/CI/team15-drexel-15/college-housing/client/stylesheets/mixins.scss",
+		"/Users/teoboley/Projects/School/CI/team15-drexel-15/college-housing/ui/layouts/app.jsx",
+		"/Users/teoboley/Projects/School/CI/team15-drexel-15/college-housing/app/layouts/app.jsx",
+		"/Users/teoboley/Projects/School/CI/team15-drexel-15/college-housing/app/containers/front_page.js",
+		"/Users/teoboley/Projects/School/CI/team15-drexel-15/college-housing/app/layouts/college.jsx",
+		"/Users/teoboley/Projects/School/CI/team15-drexel-15/college-housing/app/containers/building.js",
+		"/Users/teoboley/Projects/School/CI/team15-drexel-15/college-housing/app/collections.jsx",
+		"/Users/teoboley/Projects/School/CI/team15-drexel-15/college-housing/app/containers/college.js",
+		"/Users/teoboley/Projects/School/CI/team15-drexel-15/college-housing/app/schemas.js",
+		"/Users/teoboley/Projects/School/CI/team15-drexel-15/college-housing/app/containers/college_list.js",
+		"/Users/teoboley/Projects/School/CI/team15-drexel-15/college-housing/server/publications.js",
+		"/Users/teoboley/Projects/School/CI/team15-drexel-15/college-housing/app/components/front_page.jsx",
+		"/Users/teoboley/Projects/School/CI/team15-drexel-15/college-housing/app/collectionSchemas.js",
+		"/Users/teoboley/Projects/School/CI/team15-drexel-15/college-housing/app/components/building.jsx",
+		"/Users/teoboley/Projects/School/CI/team15-drexel-15/college-housing/app/router.jsx",
+		"/Users/teoboley/Projects/School/CI/team15-drexel-15/college-housing/app/components/account_wrapper.jsx",
+		"/Users/teoboley/Projects/School/CI/team15-drexel-15/college-housing/.gitignore",
+		"/Users/teoboley/Projects/School/CI/team15-drexel-15/college-housing/app/components/login.jsx",
+		"/Users/teoboley/Projects/School/CI/team15-drexel-15/college-housing/readme.md"
+	],
+	"find":
+	{
+		"height": 36.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"vertica",
+			"“",
+			"none",
+			"h3",
+			"'",
+			"Ratings",
+			"'",
+			"startedTyping",
+			"email",
+			"x",
+			"'",
+			"handle2",
+			"handle",
+			"College",
+			"college",
+			"class",
+			"state",
+			"Posts",
+			"posts",
+			"Posts",
+			"&",
+			"div",
+			"aboutRoutes",
+			"'",
+			"TodoItemFactory",
+			"cb",
+			"dist",
+			"state",
+			"data",
+			"onChange",
+			"secondaryColor",
+			"'",
+			"scrollTo",
+			"'",
+			"result.id",
+			"'",
+			"rowData",
+			"realmData",
+			"greenTab",
+			"home",
+			"notifCount",
+			"redTab",
+			"blueTab",
+			"'",
+			"l",
+			"items",
+			"l",
+			"source",
+			"('",
+			"run",
+			"opts",
+			"customOpts",
+			"e",
+			"libraries",
+			"'",
+			"building",
+			"Building",
+			"building",
+			"buildings",
+			"'",
+			"browser",
+			"'",
+			"gulp",
+			"button",
+			"comment",
+			"Comment",
+			"comment",
+			"commentNodes",
+			"li",
+			"div",
+			"disArray",
+			"'",
+			"\"index.js\"",
+			"\"gulpify\"",
+			"'",
+			"e",
+			"array.lookUpWordWithIndex",
+			"this",
+			"init",
+			"name",
+			"id",
+			"result",
+			"isInt",
+			"NextNum",
+			"SqrPrev",
+			"sqr_next",
+			"sqr_prev",
+			"num_next",
+			"num_prev",
+			"num_sqrt",
+			"getReadabilityLevel",
+			"error",
+			"err",
+			"m",
+			"sentences",
+			"getTextFile",
+			"getValidFileLocation",
+			"completionAverage",
+			"Avg",
+			"result.filename",
+			";\n",
+			"medium",
+			"small",
+			"personal",
+			"type",
+			"size",
+			"Pizza Size",
+			"p",
+			"medium",
+			"small",
+			"female",
+			"male",
+			"sex",
+			"h3",
+			"black olives",
+			"black",
+			"audi",
+			"fiat",
+			"saab",
+			"volvo",
+			"h2",
+			"i",
+			"i ",
+			"\"",
+			"png",
+			"hoverImg",
+			"logo_w3s",
+			"bigImg"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"secondaryColor"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 25.0
+	},
+	"input":
+	{
+		"height": 90.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.doc":
+	{
+		"height": 0.0
+	},
+	"output.exec":
+	{
+		"height": 110.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "teoboley.com.sublime-project",
+	"replace":
+	{
+		"height": 46.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"~/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings"
+			],
+			[
+				"index.html",
+				"dist/index.html"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"~/Projects/Apps/React Native/List_Off/List-Off.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 267.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
