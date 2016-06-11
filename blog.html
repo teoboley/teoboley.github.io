@@ -1,25 +1,32 @@
 ---
-layout: default
+layout: blog
 title: Blog
 permalink: /blog/
 ---
 
-<div class="home">
+<div class="blog">
+	<ul class="post-list">
+		{% for post in site.posts %}
+		<li>
+			<div class="post-meta">
+				<span class="post-title">{{ post.title }}</span>
+				<span class="post-date">{{ post.date | date: "%-d %b %Y" }}</span>
+			</div>
 
-  <h1 class="page-heading">Posts</h1>
+			<a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
+				<div>
+					<p class="post-excerpt">
+						{{ post.excerpt | remove: '<p>' | remove: '</p>' | truncatewords: 60 }}
+					</p>
+					<svg class="post-chevron" width="20" height="20" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+						<path d="M1363 877l-742 742q-19 19-45 19t-45-19l-166-166q-19-19-19-45t19-45l531-531-531-531q-19-19-19-45t19-45l166-166q19-19 45-19t45 19l742 742q19 19 19 45t-19 45z" fill="black"/>
+					</svg>
+				</div>
+			</a>
+		</li>
+		{% endfor %}
+	</ul>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+	<!--<p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>-->
 
 </div>

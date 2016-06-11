@@ -1,68 +1,239 @@
-header > nav {
-    float: right;
-    line-height: 56px;
+html {
+	height: 100%;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
 
-    .menu-icon {
-        display: none;
-    }
+body {
+	background: #252525;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
 
-    .page-link {
-        color: $text-color;
-        line-height: $base-line-height;
+// Home Screen
+.home {
+	.home-centered {
+		height: 180px;
+		@include centerer;
+		top: 40%;
 
-        // Gaps between nav items, but not on the last one
-        &:not(:last-child) {
-            margin-right: 20px;
-        }
-    }
-    
-    // Mobile handling
-    @include media-query($on-palm) {
-        position: absolute;
-        top: 9px;
-        right: $spacing-unit / 2;
-        background-color: $background-color;
-        border: 1px solid $grey-color-light;
-        border-radius: 5px;
-        text-align: right;
+		.home-title {
+			padding: 17px 2px 9px 23px;
+			margin: 0 auto;
+			text-align: center;
+			font-family: 'BEYNO';
+			background: white;
+			@include shadow-heavy;
 
-        .menu-icon {
-            display: block;
-            float: right;
-            width: 36px;
-            height: 26px;
-            line-height: 0;
-            padding-top: 10px;
-            text-align: center;
+			font-size: 2em;
+			letter-spacing: 24px;
+		}
 
-            > svg {
-                width: 18px;
-                height: 15px;
+		.menu {
+			@include display(flex);
+			@include justify-content(space-between);
+			@include flex-wrap(wrap);
+			margin-top: 50px;
 
-                path {
-                    fill: $grey-color-dark;
-                }
-            }
-        }
+			a {
+				font-family: 'Bonkers';
+				letter-spacing: 9px;
+				//position: absolute;
+				padding: 10px 6px 10px 14px;
+				color: white;
+				text-decoration: none;
+			}
 
-        .trigger {
-            clear: both;
-            display: none;
-        }
+			a:hover {
+				color: black;
+				background: white;
+				@include shadow-light;
+			}
 
-        &:hover .trigger {
-            display: block;
-            padding-bottom: 5px;
-        }
+			#menu-blog {
+				//left: 0px;
+				//bottom: 0px;
+			}
 
-        .page-link {
-            display: block;
-            padding: 5px 10px;
+			#menu-portfolio {
+				//right: 0px;
+				//bottom: 0px;
+			}
+		}
+	}
+}
 
-            &:not(:last-child) {
-                margin-right: 0;
-            }
-            margin-left: 20px;
-        }
-    }
+// Blog Page
+.blog {
+	.post-list {
+		list-style: none;
+		margin-top: 100px;
+		padding: 0;
+		margin-left: span(3);
+		margin-right: span(3);
+
+		@include breakpoint($tablets) {
+			margin-left: span(2);
+			margin-right: span(2);
+		}
+
+		@include breakpoint($smartphones) {
+			margin-left: span(1);
+			margin-right: span(1);
+		}
+
+		li {
+			margin-top: 45px;
+
+			.post-meta {
+				@include display(flex);
+				@include justify-content(space-between);
+				@include flex-wrap(wrap);
+				margin: 0px 25px 15px 25px;
+
+				span {
+					font-family: 'Bonkers';
+					letter-spacing: 4.61px;
+				}
+
+				.post-title {
+					@include flex-grow(1);
+					color: white;
+					font-size: 1.5em;
+				}
+
+				.post-date {
+					margin-top: 5px;
+					color: #9B9B9B;
+					text-align: right;
+				}
+			}
+
+			.post-link {
+				padding-top: 25px;
+				color: inherit;
+				text-decoration: inherit;
+
+				div {
+					position: relative;
+					background: white;
+					padding: 8px 25px 8px 25px;
+
+					@include shadow-light;
+
+					.post-excerpt {
+						//display: inline;
+						font-family: 'Helvetica';
+						color: dimgrey;
+						margin-right: 50px;
+
+						@include breakpoint($smartphones) {
+							margin-right: 30px;
+						}
+					}
+
+					.post-chevron {
+						@include centerer(false, true);
+						right: 25px;
+
+						> path {
+							fill: grey;
+						}
+
+						@include breakpoint($smartphones) {
+							right: 15px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+// Header
+.main-header {
+	position: fixed;
+	left: gutter();
+	right: gutter();
+	top: 0px;
+	z-index: 1000;
+	
+
+	line-height: 56px;
+
+	a {
+		color: white;
+		text-decoration: none;
+		font-family: 'Bonkers';
+		letter-spacing: 9px;
+	}
+
+	.header-selected {
+		color: black;
+		background: white;
+		margin: 5px;
+		padding: 7px 1px 5px 8px;
+		@include shadow-light;
+	}
+
+	.site-icon {
+		display: none;
+		margin-top: -1px;
+	}
+
+	.site-title {
+		font-family: 'BEYNO';
+	}
+
+	@include breakpoint($smartphones) {
+		.site-icon {
+			display: inline;
+		}
+
+		.site-title {
+			display: none;
+			font-family: 'Bonkers';
+		}
+	}
+
+	svg {
+		vertical-align:middle;
+	}
+	
+
+	> nav {
+		float: right;
+
+		.page-link {
+			.page-link-alt {
+				display: none;
+			}
+
+			@include breakpoint($smartphones) {
+				.page-link-default {
+					display: none;
+				}
+
+				.page-link-alt {
+					display: inline;
+				}
+			}
+
+			&:hover {
+				color: black;
+				background: white;
+				padding: 7px 1px 5px 8px;
+				@include shadow-light;
+
+				.nav-icon {
+					fill: black;
+				}
+			}
+
+			// Gaps between nav items, but not on the last one
+			&:not(:last-child) {
+				margin-right: 20px;
+			}
+		}
+	}
 }

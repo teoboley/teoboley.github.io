@@ -1,8 +1,10 @@
-h1, h2, h3, h4, h5, h6,
-p, blockquote, pre,
-ul, ol, dl, figure,
+$susy: (
+    columns: 12,  // The number of columns in your grid
+    gutters: 1/4, // The size of a gutter in relation to a single column
+);
+
 %vertical-rhythm {
-    margin-bottom: $spacing-unit / 2;
+    margin-bottom: 15px;
 }
 
 .icon {
@@ -14,7 +16,7 @@ ul, ol, dl, figure,
         vertical-align: middle;
 
         path {
-            fill: $grey-color;
+            fill: #828282;
         }
     }
 }
