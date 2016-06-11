@@ -1,8 +1,10 @@
 // Breakpoint Variables
 
-$smartphones: 320px 480px;
+$smartphones: 320px 768px;
 $smartphones-landscape: 321px;
 $smartphones-portrait: max-width 320px;
 $tablets: 768px 1024px;
 $laptops: 1224px;
 $large-screens: 1824px;
+
+$margin-top-default: 100px;

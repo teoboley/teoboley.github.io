@@ -1,0 +1,94 @@
+.post {
+
+	.article-image + .article-body {
+		// there is an image
+		& {
+			margin-top: $margin-top-default*2.5;
+
+			@include breakpoint($smartphones) {
+				margin-top: $margin-top-default*1.5;
+			}
+		}
+	}
+	margin-top: $margin-top-default*1.5;
+
+	.article-image {
+		position: absolute;
+		width: 100%;
+		top: 0px;
+		left: 0px;
+		right: 0px;
+		height: $margin-top-default*4;
+		@include breakpoint($smartphones) {
+			height: $margin-top-default*3;
+		}
+		z-index: -1;
+
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center center;
+	}
+
+	.article-body {
+		margin-left: span(3);
+		margin-right: span(3);
+
+		@include breakpoint($smartphones) {
+			margin-left: gutter();
+			margin-right: gutter();
+		}
+
+		@include breakpoint($tablets) {
+			margin-left: span(2);
+			margin-right: span(2);
+		}
+
+		.article-meta {
+			font-family: Bonkers;
+			color: white;
+			margin: 0 0 15px 0;
+			font-family: 'Bonkers';
+			letter-spacing: 4.61px;
+			text-shadow: 0px 2px 14px rgba(0,0,0,0.60);
+
+			@include display(flex);
+			@include justify-content(space-between);
+			@include flex-wrap(wrap);
+
+			.article-title {
+				font-size: 2.5em;
+				letter-spacing: 0.35em;
+				
+				margin: 0;
+			}
+
+			.article-date {
+				margin-top: 1em;
+			}
+
+			.article-author {
+				margin-top: 1em;
+			}
+		}
+
+		.post-content {
+			// style article content here!
+			background: white;
+			padding: 8px 25px 8px 25px;
+
+			a {
+				color: initial;
+			}
+
+			figure {
+				//padding: 15px;
+				color: initial !important;
+				//box-shadow: inset 0px 1px 10px 0px rgba(0,0,0,0.30);
+			}
+
+			color: dimgrey;
+
+			@include shadow-light;
+		}
+	}
+}

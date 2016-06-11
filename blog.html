@@ -14,7 +14,10 @@ permalink: /blog/
 			</div>
 
 			<a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
-				<div>
+				<div class ="post-content">
+					{% if post.image %}
+						<div class="post-image" style="background-image: url({{ post.image }});"></div>
+					{% endif %}
 					<p class="post-excerpt">
 						{{ post.excerpt | remove: '<p>' | remove: '</p>' | truncatewords: 60 }}
 					</p>

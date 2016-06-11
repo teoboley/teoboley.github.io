@@ -3,29 +3,32 @@ layout: blog
 ---
 
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
-
-	<header>
-		<h1 itemprop="name headline">{{ page.title }}</h1>
-		<p>
-			<!-- date post was written -->
-			<time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-				{{ page.date | date: "%b %-d, %Y" }}
-			</time>
+	{% if page.image %}
+		<div class="article-image" style="background-image: url({{ page.image }});"></div>
+	{% endif %}
+	<div class="article-body">
+		<div class="article-meta">
+			<span class="article-title" itemprop="name headline">{{ page.title }}</span>
 
 			<!-- author -->
-			{% if page.author %} • 
-				<span itemprop="author" itemscope itemtype="http://schema.org/Person">
+			{% if page.author %}
+				<span class="article-author" itemprop="author" itemscope itemtype="http://schema.org/Person">
 					<span itemprop="name">
-						{{ page.author }}
+						by {{ page.author }}
 					</span>
 				</span>
 			{% endif %}
-		</p>
-	</header>
+			
+			<!-- date post was written -->
+			<span class="article-date" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+				{{ page.date | date: "%-d %b %Y" }}
+			</span>
+		</div>
 
-	<!-- Content -->
-	<div class="post-content" itemprop="articleBody">
-		{{ content }}
+		<!-- Content -->
+		<div class="post-content" itemprop="articleBody">
+			{{ content }}
+		</div>
 	</div>
 
 </article>
