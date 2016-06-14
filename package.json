@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/teoboley/teoboley.github.io/issues"
   },
-  "homepage": "https://github.com/teoboley/teoboley.github.io#readme"
+  "homepage": "https://github.com/teoboley/teoboley.github.io#readme",
+  "devDependencies": {
+    "gulp": "github:gulpjs/gulp#4.0"
+  }
 }
