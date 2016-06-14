@@ -1,0 +1,46 @@
+#portfolio {
+	margin-top: $margin-top-default;
+
+	@include breakpoint($smartphones) {
+		margin-top: $margin-top-smartphones;
+	}
+
+	#welcome {
+		text-align: center;
+		margin-left: span(2);
+		margin-right: span(2);
+
+		@include breakpoint($smartphones) {
+			margin-left: gutter();
+			margin-right: gutter();
+		}
+
+		> h1 {
+			// Welcome Message
+			font-family: "BEYNO";
+			color: white;
+
+			font-size: 48px;
+			color: #FFFFFF;
+			letter-spacing: 18px;
+		}
+
+		> p {
+			// Description
+			font-family: "Bonkers";
+			color: grey;
+			letter-spacing: 2px;
+		}
+	}
+
+	#project-list {
+
+		@include display(flex);
+		
+
+		.project-element {
+
+		}
+	}
+
+}

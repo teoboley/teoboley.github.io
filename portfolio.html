@@ -4,15 +4,22 @@ title: Portfolio
 permalink: /portfolio/
 ---
 
-<div class="portfolio">
-	<h1>Projects</h1>
-	<ul>
+<div id="portfolio">
+	<div id="welcome">
+		<h1>HELLO, I'M TEO.</h1>
+		<p>
+			I’m a CS major at Northeastern University with skill in Web, Desktop, and Mobile Design & Development.
+		</p>
+	</div>
+	
+
+	<div id="project-list">
 		{% for project in site.projects %}
-		<li>
-			<h2>
-				<a class="post-link" href="{{ project.url | prepend: site.baseurl }}">{{ project.title }}</a>
-			</h2>
-		</li>
+			<div class="project-element">
+				<h2>
+					<a class="project-link" href="{{ project.url | prepend: site.baseurl }}">{{ project.title }}</a>
+				</h2>
+			</div>
 		{% endfor %}
-	</ul>
+	</div>
 </div>
