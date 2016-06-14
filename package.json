@@ -1,0 +1,19 @@
+{
+  "name": "teoboley.github.io",
+  "version": "1.0.0",
+  "description": "A personal blog/portfolio website for Teo Boley.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/teoboley/teoboley.github.io.git"
+  },
+  "author": "Teo Boley",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/teoboley/teoboley.github.io/issues"
+  },
+  "homepage": "https://github.com/teoboley/teoboley.github.io#readme"
+}
