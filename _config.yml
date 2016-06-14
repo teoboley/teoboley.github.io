@@ -17,7 +17,8 @@ github_username:  teoboley
 exclude: [
   "Gemfile",
   "Gemfile.lock",
-  "node_modules"
+  "node_modules",
+  "package.json",
 ]
 
 collections:
