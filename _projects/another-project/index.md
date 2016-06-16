@@ -1,5 +1,5 @@
 ---
-title:  College Housing
+title:  Another Project
 image: https://images.unsplash.com/photo-1445620466293-d6316372ab59?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=bccb92db735f108588edea0330bb2aca
 ---
 

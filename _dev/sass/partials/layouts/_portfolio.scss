@@ -34,12 +34,45 @@
 	}
 
 	#project-list {
-
+		margin-left: span(2);
+		margin-right: span(2);
+		margin-top: 40px;
 		display: flex;
-		
+		flex-wrap: wrap;
+		justify-content: space-between;
 
 		.project-element {
+			width: 32%;
+			margin-bottom: 10px;
 
+			&:nth-child(4n+2) {
+				width: 65%;
+			}
+			  
+			&:nth-child(4n+3) {
+				width: 65%;
+			}
+
+			@include breakpoint($smartphones) {
+				width: 100% !important;
+			}
+
+			a {
+				font-family: Bonkers;
+				letter-spacing: 2px;
+				color: lightgrey;
+				text-decoration: none;
+			}
+
+			.project-image {
+				width: 100%;
+				height: 200px;
+				@include shadow-light;
+
+				background-size: cover;
+				background-repeat: no-repeat;
+				background-position: center center;
+			}
 		}
 	}
 

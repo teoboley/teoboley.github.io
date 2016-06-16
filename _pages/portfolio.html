@@ -16,9 +16,18 @@ permalink: /portfolio/
 	<div id="project-list">
 		{% for project in site.projects %}
 			<div class="project-element">
-				<h2>
-					<a class="project-link" href="{{ project.url | prepend: site.baseurl }}">{{ project.title }}</a>
-				</h2>
+				<style>
+					.project-image {
+						background-image:
+							url({{ project.image }});
+						background-image:
+							url({{ project.image }});
+					}
+				</style>
+				<a class="project-link" href="{{ project.url | prepend: site.baseurl }}">
+					<div class="project-image"></div>
+					<p class="project-title">{{ project.title }}</p>
+				</a>
 			</div>
 		{% endfor %}
 	</div>
