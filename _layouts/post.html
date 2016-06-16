@@ -4,7 +4,10 @@ layout: blog
 
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 	{% if page.image %}
-		<div class="article-image" style="background-image: url({{ page.image }});"></div>
+		<div class="article-image" style="background-image: linear-gradient(
+      rgba(0, 0, 0, 0.25), 
+      rgba(0, 0, 0, 0.25)
+    ), url({{ page.image }});"></div>
 	{% endif %}
 	<div class="article-body">
 		<div class="article-meta">
