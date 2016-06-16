@@ -28,7 +28,7 @@ const paths = {
 		dest: baseDest + "/js"
 	},
 	images: {
-		src: baseSrc + "/img/*", // be more specific
+		src: baseSrc + "/img/*.{jpg,png}",
 		dest: baseDest + "/img"
 	}
 };
@@ -51,9 +51,9 @@ gulp.task("scripts", () => {
 });
 
 gulp.task("images", () => {
-	return gulp.src(paths.scripts.src)
+	return gulp.src(paths.images.src)
 		.pipe(plumber())
-		.pipe(gulp.dest(paths.scripts.dest));
+		.pipe(gulp.dest(paths.images.dest));
 });
 
 gulp.task("jekyll-build", ["styles", "scripts", "images"], (done) => {

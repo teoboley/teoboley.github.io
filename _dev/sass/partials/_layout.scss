@@ -5,15 +5,20 @@ html {
 }
 
 body {
-	background: #252525;
+	background-image: url(../img/background.png);
+	background-color: #252525;
+
+	background-size: cover;
 	background-repeat: no-repeat;
+	background-position: center center;
 	background-attachment: fixed;
 }
 
 @import
-		"./layouts/home",
-		"./layouts/header",
-		"./layouts/blog",
-		"./layouts/post",
-		"./layouts/portfolio"
+	"layouts/home",
+	"layouts/header",
+	"layouts/blog",
+	"layouts/post",
+	"layouts/portfolio",
+	"layouts/project"
 ;
