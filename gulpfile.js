@@ -1,6 +1,7 @@
 // Require all the things
 const gulp = require("gulp");
 const gutil = require("gulp-util");
+const plumber = require("gulp-plumber");
 
 const sass = require("gulp-sass");
 const autoprefixer = require("gulp-autoprefixer");
@@ -34,7 +35,8 @@ const paths = {
 
 gulp.task("styles", () => {
 	return gulp.src(paths.styles.src)
-		.pipe(sass())
+		.pipe(plumber())
+		.pipe(sass.sync())
 		.pipe(autoprefixer({
 			browsers: ["last 2 versions"]
 		}))
@@ -44,13 +46,13 @@ gulp.task("styles", () => {
 
 gulp.task("scripts", () => {
 	return gulp.src(paths.scripts.src)
-
+		.pipe(plumber())
 		.pipe(gulp.dest(paths.scripts.dest));
 });
 
 gulp.task("images", () => {
 	return gulp.src(paths.scripts.src)
-
+		.pipe(plumber())
 		.pipe(gulp.dest(paths.scripts.dest));
 });
 
