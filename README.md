@@ -2,7 +2,7 @@
 
 ## Setup
 
-Clone the repository, and install npm, bower, bundler and gulp.js.  `cd` into the repository's folder and run `npm install && bower install && bundle install` to install all of the dependencies of this project.
+Clone the repository, and install [node.js and npm](http://nodejs.org), [bower](http://bower.io), [bundler](http://bundler.io) and [gulp.js](http://gulpjs.com) on your machine.  `cd` into the repository's folder and run `npm install && bower install && bundle install` to install all of the dependencies of this project.
 
 ## Development
 
