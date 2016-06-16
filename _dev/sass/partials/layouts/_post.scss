@@ -78,18 +78,17 @@
 			// style article content here!
 			background: white;
 			padding: 8px 25px 8px 25px;
+			color: dimgrey;
 
 			a {
 				color: initial;
 			}
 
-			figure, pre, code {
-				//padding: 15px;
+			.highlight {
+				padding: 10px;
+				border-radius: 10px;
 				color: initial !important;
-				//box-shadow: inset 0px 1px 10px 0px rgba(0,0,0,0.30);
 			}
-
-			color: dimgrey;
 
 			@include shadow-light;
 		}
