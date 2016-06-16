@@ -19,16 +19,16 @@ const paths = {
 	styles: {
 		src: baseSrc + "/sass/*.scss",
 		watch: baseSrc + "/sass/**/*.scss",
-		dest: "css"
+		dest: baseDest + "/css"
 	},
 	scripts: {
 		src: baseSrc + "/js/*.js",
 		watch: baseSrc + "/js/**/*.js",
-		dest: baseDest + "js"
+		dest: baseDest + "/js"
 	},
 	images: {
 		src: baseSrc + "/img/*", // be more specific
-		dest: baseDest + "img"
+		dest: baseDest + "/img"
 	}
 };
 
