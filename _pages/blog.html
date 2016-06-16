@@ -4,8 +4,8 @@ title: Blog
 permalink: /blog/
 ---
 
-<div class="blog">
-	<ul class="post-list">
+<div id="blog">
+	<ul id="post-list">
 		{% for post in site.posts %}
 			<li>
 				<div class="post-meta">
@@ -29,6 +29,16 @@ permalink: /blog/
 			</li>
 		{% endfor %}
 	</ul>
+
+	<!-- Pagination links -->
+	<div id="pagination">
+		{% if paginator.previous_page %}
+			<a href="{{ paginator.previous_page_path }}" id="previous">Previous</a>
+		{% endif %}
+		{% if paginator.next_page %}
+			<a href="{{ paginator.next_page_path }}" id="next">Next</a>
+		{% endif %}
+	</div>
 
 	<!--<p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>-->
 

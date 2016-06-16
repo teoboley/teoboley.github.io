@@ -1,21 +1,22 @@
-.blog {
-	.post-list {
+#blog {
+	margin-left: span(3);
+	margin-right: span(3);
+	margin-top: $margin-top-default;
+
+	@include breakpoint($tablets) {
+		margin-left: span(2);
+		margin-right: span(2);
+	}
+
+	@include breakpoint($smartphones) {
+		margin-left: span(1);
+		margin-right: span(1);
+		margin-top: $margin-top-smartphones;
+	}
+
+	#post-list {
 		list-style: none;
-		margin-top: $margin-top-default;
 		padding: 0;
-		margin-left: span(3);
-		margin-right: span(3);
-
-		@include breakpoint($tablets) {
-			margin-left: span(2);
-			margin-right: span(2);
-		}
-
-		@include breakpoint($smartphones) {
-			margin-left: span(1);
-			margin-right: span(1);
-			margin-top: $margin-top-smartphones;
-		}
 
 		li {
 			margin-top: 45px;
@@ -99,6 +100,29 @@
 						}
 					}
 				}
+			}
+		}
+	}
+
+	#pagination {
+		margin-top: 50px;
+		display: flex;
+		justify-content: space-between;
+		margin-left: span(2);
+		margin-right: span(2);
+
+		> a {
+			color: white;
+			text-decoration: none;
+			font-family: 'Bonkers';
+			letter-spacing: 4px;
+			margin-bottom: 50px;
+
+			&:hover {
+				color: black;
+				background: white;
+				padding: 7px 1px 5px 8px;
+				@include shadow-light;
 			}
 		}
 	}
