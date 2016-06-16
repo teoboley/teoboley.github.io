@@ -14,13 +14,19 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://www.teoboley.com" # the base hostname & protocol for your site
 github_username:  teoboley
 
+include: [
+  "_assets"
+]
+
 exclude: [
   "Gemfile",
   "Gemfile.lock",
   "node_modules",
   "package.json",
   "_dev",
-  "gulpfile.js"
+  "gulpfile.js",
+  "teoboley.com.sublime-project",
+  "teoboley.com.sublime-workspace"
 ]
 
 collections:

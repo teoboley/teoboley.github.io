@@ -4,6 +4,42 @@
 		"selected_items":
 		[
 			[
+				"base",
+				"baseSrc〔variable〕"
+			],
+			[
+				"de",
+				"develop"
+			],
+			[
+				"margin-top",
+				"margin-top-default"
+			],
+			[
+				"margin",
+				"margin-top"
+			],
+			[
+				"font",
+				"font-family"
+			],
+			[
+				"pos",
+				"position"
+			],
+			[
+				"margin-",
+				"margin-left"
+			],
+			[
+				"article",
+				"article-body"
+			],
+			[
+				"marg",
+				"margin-top-default"
+			],
+			[
 				"bui",
 				"buildingID〔variable〕"
 			],
@@ -26,14 +62,6 @@
 			[
 				"tex",
 				"text-decoration"
-			],
-			[
-				"margin",
-				"margin-right"
-			],
-			[
-				"marg",
-				"margin-left"
 			],
 			[
 				"backg",
@@ -66,10 +94,6 @@
 			[
 				"cl",
 				"className"
-			],
-			[
-				"font",
-				"font-size"
 			],
 			[
 				"backgr",
@@ -198,10 +222,6 @@
 			[
 				"rendere",
 				"renderedComponent"
-			],
-			[
-				"article",
-				"articleAuthor"
 			],
 			[
 				"articl",
@@ -494,31 +514,35 @@
 			[
 				"comp",
 				"completionPercentage"
-			],
-			[
-				"file",
-				"fileName"
-			],
-			[
-				"s",
-				"src"
-			],
-			[
-				"app",
-				"appName"
-			],
-			[
-				"colo",
-				"color"
-			],
-			[
-				"border",
-				"border-collapse"
 			]
 		]
 	},
 	"buffers":
 	[
+		{
+			"file": "gulpfile.js",
+			"settings":
+			{
+				"buffer_size": 2289,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "_dev/sass/partials/layouts/_home.scss",
+			"settings":
+			{
+				"buffer_size": 780,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "_dev/sass/main.scss",
+			"settings":
+			{
+				"buffer_size": 419,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -647,15 +671,46 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/teoboley/Projects/Websites/Teo Boley/site",
-		"/Users/teoboley/Projects/Websites/Teo Boley/site/_layouts",
-		"/Users/teoboley/Projects/Websites/Teo Boley/site/_posts",
-		"/Users/teoboley/Projects/Websites/Teo Boley/site/_projects",
-		"/Users/teoboley/Projects/Websites/Teo Boley/site/_sass",
-		"/Users/teoboley/Projects/Websites/Teo Boley/site/css"
+		"/Users/teoboley/Projects/Websites/Teo Boley/teoboley.github.io",
+		"/Users/teoboley/Projects/Websites/Teo Boley/teoboley.github.io/_dev",
+		"/Users/teoboley/Projects/Websites/Teo Boley/teoboley.github.io/_dev/sass",
+		"/Users/teoboley/Projects/Websites/Teo Boley/teoboley.github.io/_dev/sass/partials",
+		"/Users/teoboley/Projects/Websites/Teo Boley/teoboley.github.io/_dev/sass/partials/layouts",
+		"/Users/teoboley/Projects/Websites/Teo Boley/teoboley.github.io/_projects/college-housing",
+		"/Users/teoboley/Projects/Websites/Teo Boley/teoboley.github.io/_site/2016",
+		"/Users/teoboley/Projects/Websites/Teo Boley/teoboley.github.io/_site/2016/06",
+		"/Users/teoboley/Projects/Websites/Teo Boley/teoboley.github.io/assets/css"
 	],
 	"file_history":
 	[
+		"/Users/teoboley/Projects/Websites/Teo Boley/teoboley.github.io/_includes/head.html",
+		"/Users/teoboley/Projects/Websites/Teo Boley/teoboley.github.io/portfolio.html",
+		"/Users/teoboley/Projects/Websites/Teo Boley/teoboley.github.io/gulpfile.js",
+		"/Users/teoboley/Projects/Websites/Teo Boley/teoboley.github.io/_dev/sass/partials/layouts/_home.scss",
+		"/Users/teoboley/Projects/Websites/Teo Boley/teoboley.github.io/_dev/sass/main.scss",
+		"/Users/teoboley/Projects/Websites/Teo Boley/teoboley.github.io/_dev/sass/partials/partials/_layout.scss",
+		"/Users/teoboley/Projects/Websites/Teo Boley/teoboley.github.io/_dev/sass/partials/layouts/_post.scss",
+		"/Users/teoboley/Projects/Websites/Teo Boley/teoboley.github.io/_dev/sass/partials/layouts/_portfolio.scss",
+		"/Users/teoboley/Projects/Websites/Teo Boley/teoboley.github.io/_dev/sass/partials/layouts/_blog.scss",
+		"/Users/teoboley/Projects/Websites/Teo Boley/teoboley.github.io/_dev/sass/partials/layouts/_header.scss",
+		"/Users/teoboley/Projects/Websites/Teo Boley/teoboley.github.io/_dev/sass/partials/_mixins.scss",
+		"/Users/teoboley/Projects/Websites/Teo Boley/teoboley.github.io/_sass/_variables.scss",
+		"/Users/teoboley/Projects/Websites/Teo Boley/teoboley.github.io/_sass/layouts/_portfolio.scss",
+		"/Users/teoboley/Projects/Websites/Teo Boley/teoboley.github.io/css/main.scss",
+		"/Users/teoboley/Projects/Websites/Teo Boley/teoboley.github.io/_dev/sass/partials/_layout.scss",
+		"/Users/teoboley/Projects/Websites/Teo Boley/teoboley.github.io/_config.yml",
+		"/Users/teoboley/Projects/Websites/Teo Boley/teoboley.github.io/assets/img",
+		"/Users/teoboley/Projects/Websites/Teo Boley/teoboley.github.io/_sass/layouts/_blog.scss",
+		"/Users/teoboley/Projects/Websites/Teo Boley/teoboley.github.io/_sass/layouts/_post.scss",
+		"/Users/teoboley/Projects/Websites/Teo Boley/teoboley.github.io/_sass/layouts/_home.scss",
+		"/Users/teoboley/Projects/Websites/Teo Boley/teoboley.github.io/_posts/2016-06-08-New Server.md",
+		"/Users/teoboley/Projects/Websites/Teo Boley/teoboley.github.io/_sass/_layout.scss",
+		"/Users/teoboley/Projects/Websites/Teo Boley/teoboley.github.io/blog.html",
+		"/Users/teoboley/Projects/Websites/Teo Boley/teoboley.github.io/_layouts/post.html",
+		"/Users/teoboley/Projects/Websites/Teo Boley/teoboley.github.io/_sass/layouts/_header.scss",
+		"/Users/teoboley/Projects/Websites/Teo Boley/teoboley.github.io/_includes/blog-header.html",
+		"/Users/teoboley/Projects/Websites/Teo Boley/teoboley.github.io/_includes/portfolio-header.html",
+		"/Users/teoboley/Projects/Websites/Teo Boley/teoboley.github.io/_posts/2016-06-09-New Post.md",
 		"/Users/teoboley/Projects/Websites/Teo Boley/site/_includes/footer.html",
 		"/Users/teoboley/Projects/Websites/Teo Boley/site/_layouts/default.html",
 		"/Users/teoboley/Projects/Websites/Teo Boley/site/_layouts/page.html",
@@ -736,6 +791,15 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"'",
+			"dir",
+			"'",
+			"_sass",
+			"styles",
+			"css",
+			"'",
+			"\"",
+			"'",
 			"vertica",
 			"“",
 			"none",
@@ -854,16 +918,7 @@
 			"black",
 			"audi",
 			"fiat",
-			"saab",
-			"volvo",
-			"h2",
-			"i",
-			"i ",
-			"\"",
-			"png",
-			"hoverImg",
-			"logo_w3s",
-			"bigImg"
+			"saab"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -882,8 +937,306 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "gulpfile.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2289,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								932,
+								932
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"WordCount":
+							{
+								"changes": 18,
+								"count": 124,
+								"modified": false,
+								"selection": false,
+								"status": -1,
+								"syntax": "plain text"
+							},
+							"apply_syntax_touched": true,
+							"auto_complete": false,
+							"bh_regions":
+							[
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/itg.dark (SL).tmTheme",
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 200.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "_dev/sass/partials/layouts/_home.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 780,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								212,
+								212
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"WordCount":
+							{
+								"changes": 11,
+								"count": 81,
+								"modified": false,
+								"selection": false,
+								"status": -1,
+								"syntax": "plain text"
+							},
+							"apply_syntax_touched": true,
+							"bh_regions":
+							[
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/itg.dark (SL).tmTheme",
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "_dev/sass/main.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 419,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								203,
+								203
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"WordCount":
+							{
+								"changes": 5,
+								"count": 20,
+								"modified": false,
+								"selection": false,
+								"status": -1,
+								"syntax": "plain text"
+							},
+							"apply_syntax_touched": true,
+							"bh_regions":
+							[
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/itg.dark (SL).tmTheme",
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
 			]
 		}
 	],

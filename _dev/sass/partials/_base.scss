@@ -1,0 +1,22 @@
+$susy: (
+    columns: 12,  // The number of columns in your grid
+    gutters: 1/4, // The size of a gutter in relation to a single column
+);
+
+%vertical-rhythm {
+    margin-bottom: 15px;
+}
+
+.icon {
+
+    > svg {
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        vertical-align: middle;
+
+        path {
+            fill: #828282;
+        }
+    }
+}

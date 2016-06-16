@@ -1,0 +1,19 @@
+html {
+	height: 100%;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	background: #252525;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+@import
+		"./layouts/home",
+		"./layouts/header",
+		"./layouts/blog",
+		"./layouts/post",
+		"./layouts/portfolio"
+;

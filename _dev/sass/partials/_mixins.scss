@@ -1,0 +1,22 @@
+@mixin centerer($horizontal: true, $vertical: true) {
+	position: absolute;
+	@if ($horizontal and $vertical) {
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	} @else if ($horizontal) {
+		left: 50%;
+		transform: translate(-50%, 0);
+	} @else if ($vertical) {
+		top: 50%;
+		transform: translate(0, -50%);
+	}
+}
+
+@mixin shadow-heavy {
+	box-shadow: 0px 6px 10px 3px rgba(0,0,0,0.79);
+}
+
+@mixin shadow-light {
+	box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.5);
+}
