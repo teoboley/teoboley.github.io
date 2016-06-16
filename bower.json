@@ -1,0 +1,22 @@
+{
+  "name": "teoboley.github.io",
+  "description": "A personal blog/portfolio website for Teo Boley.",
+  "main": "index.js",
+  "authors": [
+    "Teo Boley"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/teoboley/teoboley.github.io",
+  "moduleType": [],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "breakpoint-sass": "^2.7.0"
+  }
+}
