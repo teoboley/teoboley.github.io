@@ -53,6 +53,12 @@
 				width: 65%;
 			}
 
+			&:nth-last-child(1) {
+				&:nth-child(odd) {
+					width: 100%;
+				}
+			}
+
 			@include breakpoint($smartphones) {
 				width: 100% !important;
 			}
