@@ -76,15 +76,34 @@
 					.post-excerpt {
 						//display: block;
 						//position: absolute;
+						position: relative;
+
 						font-family: 'Helvetica';
+						line-height: 1.2em;
 						color: dimgrey;
 						margin-left: 0px;
 						margin-right: 50px;
+						overflow: clip;
+						height: 1.2em*4; /* exactly three lines */
+						overflow: hidden;
+						//max-height: 72px;
+						//@include ellipsis(100%);
 
 						@include breakpoint($smartphones) {
 							margin-left: 30px;
 							margin-right: 30px;
 						}
+					}
+
+					.post-excerpt:after {
+					  content: "";
+					  text-align: right;
+					  position: absolute;
+					  bottom: 0;
+					  right: 0;
+					  width: 15%;
+					  height: 1.2em;
+					  background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1) 50%);
 					}
 
 					.post-chevron {
