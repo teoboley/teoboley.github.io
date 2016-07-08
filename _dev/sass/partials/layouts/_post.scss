@@ -76,6 +76,7 @@
 
 		.post-content {
 			// style article content here!
+			font-family: Helvetica;
 			background: white;
 			padding: 8px 25px 8px 25px;
 			color: dimgrey;
@@ -84,10 +85,67 @@
 				color: initial;
 			}
 
+			img {
+				max-width: 80%;
+				display:block;
+				padding-top: 15px;
+				padding-bottom: 15px;
+				margin: auto;
+			}
+
+			p > code {
+				// inline code
+				background: lightgray;
+				color: initial;
+				padding: 3px;
+				border-radius: 3px;
+			}
+
+			blockquote {
+				background: #f9f9f9;
+				border-left: 10px solid #ccc;
+				margin: 1.5em 10px;
+				padding: 0.5em 10px;
+				quotes: "\201C""\201D""\2018""\2019";
+
+				p {
+					margin-left: 10px;
+				}
+			}
+			
+			/*
+			blockquote p {
+			  display: inline;
+			}*/
+
+			
 			.highlight {
+				// syntax highlighting
 				padding: 10px;
 				border-radius: 10px;
-				color: initial !important;
+				overflow: scroll;
+
+				> pre {
+					margin-left: 10px;
+					margin-right: 10px;
+				}
+
+				.code {
+					> pre {
+						margin: 0px;
+					}
+				}
+				
+				.gutter {
+					user-select: none;
+
+					.lineno {
+						color: dimgrey;
+						margin-top: 0px;
+						margin-bottom: 0px;
+						margin-right: 10px;
+					}
+				}
 			}
 
 			@include shadow-light;
