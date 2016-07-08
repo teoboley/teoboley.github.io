@@ -17,7 +17,6 @@
     "tests"
   ],
   "dependencies": {
-    "breakpoint-sass": "^2.7.0",
-    "hover": "Hover#^2.0.2"
+    "breakpoint-sass": "^2.7.0"
   }
 }
