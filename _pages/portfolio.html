@@ -14,12 +14,11 @@ permalink: /portfolio/
 	
 
 	<div id="project-list">
-		{% for project in site.projects %}
+		{% assign projects = (site.projects | sort: 'date') | reverse %}
+		{% for project in projects %}
 			<div class="project-element">
 				<style>
 					.project-image {
-						background-image:
-							url({{ project.image }});
 						background-image:
 							url({{ project.image }});
 					}
