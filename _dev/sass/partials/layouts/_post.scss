@@ -96,7 +96,7 @@
 			p > code {
 				// inline code
 				background: lightgray;
-				color: initial;
+				color: #333333;
 				padding: 3px;
 				border-radius: 3px;
 			}
@@ -124,6 +124,11 @@
 				padding: 10px;
 				border-radius: 10px;
 				overflow: scroll;
+
+				@include breakpoint($smartphones) {
+					margin-left: gutter();
+					margin-right: gutter();
+				}
 
 				> pre {
 					margin-left: 10px;
