@@ -27,5 +27,9 @@
     "gulp-plumber": "^1.1.0",
     "gulp-sass": "^2.3.1",
     "gulp-util": "^3.0.7"
+  },
+  "dependencies": {
+    "jquery": "^3.1.0",
+    "smoothstate": "^0.7.2"
   }
 }
