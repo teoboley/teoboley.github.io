@@ -6,14 +6,16 @@
 	}
 
 	#project-meta {
+		background: white;
+		@include shadow-light;
+
 		#project-title {
 			display: table;
 			padding: 17px 2px 9px 23px;
 			margin: 0 auto;
 			text-align: center;
 			font-family: 'BEYNO';
-			background: white;
-			@include shadow-light;
+			
 
 			font-size: 2em;
 			letter-spacing: 24px;
