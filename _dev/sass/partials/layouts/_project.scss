@@ -6,24 +6,23 @@
 	}
 
 	#project-meta {
+		display: table;
 		background: white;
 		@include shadow-light;
+		margin: 0 auto;
+		padding: 17px 2px 9px 23px;
 
 		#project-title {
-			display: table;
-			padding: 17px 2px 9px 23px;
-			margin: 0 auto;
+			display: inline-block;
 			text-align: center;
 			font-family: 'BEYNO';
-			
+			margin: 10px 0 0 0;
 
 			font-size: 2em;
 			letter-spacing: 24px;
 		}
 
 		#project-date {
-			display: table;
-			margin: 40px auto;
 			color: darkgrey;
 			font-family: Bonkers;
 		}
@@ -48,7 +47,7 @@
 	.device {
 		display: block;
 		max-width: 50%;
-		margin: 0 auto;
+		margin: 50px auto;
 		filter: drop-shadow(5);
 
 		@include breakpoint($smartphones) {
@@ -57,7 +56,7 @@
 	}
 
 	#project-content {
-		margin: 100px span(2) 100px span(2);
+		margin: 0 span(2);
 
 		@include breakpoint($smartphones) {
 			margin: 50px gutter() 50px gutter();
