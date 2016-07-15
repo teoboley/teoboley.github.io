@@ -21,29 +21,6 @@
 		li {
 			margin-bottom: 50px;
 
-			$size-change: 5px;
-			padding: $size-change;
-			
-			@keyframes grow {
-			    from {padding: $size-change;}
-			    to {padding: 0px;}
-			}
-
-			@keyframes shrink {
-				from {padding: 0px;}
-				to {padding: $size-change;}
-			}
-
-			animation-name: shrink;
-			animation-duration: 0.5s;
-			
-			&:hover, &:active {
-				animation-name: grow;
-				animation-duration: 0.5s;
-
-				padding: 0px;
-			}
-
 			.post-meta {
 				display: flex;
 				justify-content: space-between;

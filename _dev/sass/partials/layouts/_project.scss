@@ -1,3 +1,73 @@
 #project {
 	margin-top: $margin-top-default;
+
+	@include breakpoint($smartphones) {
+		margin-top: $margin-top-smartphones;
+	}
+
+	#project-meta {
+		#project-title {
+			display: table;
+			padding: 17px 2px 9px 23px;
+			margin: 0 auto;
+			text-align: center;
+			font-family: 'BEYNO';
+			background: white;
+			@include shadow-light;
+
+			font-size: 2em;
+			letter-spacing: 24px;
+		}
+
+		#project-date {
+			display: table;
+			margin: 40px auto;
+			color: darkgrey;
+			font-family: Bonkers;
+		}
+	}
+
+	#project-image {
+		position: fixed;
+		width: 100%;
+		height: 100%;
+		top: 0px;
+		left: 0px;
+		right: 0px;
+		bottom: 0px;
+		z-index: -1;
+	
+		filter: blur(10px);
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center center;
+	}
+
+	.device {
+		display: block;
+		max-width: 50%;
+		margin: 0 auto;
+		filter: drop-shadow(5);
+
+		@include breakpoint($smartphones) {
+			max-width: 90%;
+		}
+	}
+
+	#project-content {
+		margin: 100px span(2) 100px span(2);
+
+		@include breakpoint($smartphones) {
+			margin: 50px gutter() 50px gutter();
+		}
+
+		color: lightgrey;
+		font-family: Helvetica;
+
+		img {
+			max-width: 60%;
+			display:block;
+			margin: 30px auto 30px auto;
+		}
+	}
 }
