@@ -7,24 +7,31 @@
 
 	#project-meta {
 		display: table;
-		background: white;
-		@include shadow-light;
+		
 		margin: 0 auto;
-		padding: 17px 2px 9px 23px;
+
+
+		#project-date {
+			color: darkgrey;
+			font-family: Bonkers;
+			text-align: center;
+
+			letter-spacing: 10px;
+		}
 
 		#project-title {
 			display: inline-block;
 			text-align: center;
 			font-family: 'BEYNO';
-			margin: 10px 0 0 0;
+
+			margin: 20px 0 0 0;
+			background: white;
+
+			@include shadow-light;
+			padding: 17px 2px 9px 23px;
 
 			font-size: 2em;
 			letter-spacing: 24px;
-		}
-
-		#project-date {
-			color: darkgrey;
-			font-family: Bonkers;
 		}
 	}
 
@@ -47,7 +54,7 @@
 	.device {
 		display: block;
 		max-width: 50%;
-		margin: 50px auto;
+		margin: 100px auto;
 		filter: drop-shadow(5);
 
 		@include breakpoint($smartphones) {
