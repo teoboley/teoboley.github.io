@@ -2,12 +2,22 @@
 const gulp = require("gulp");
 const gutil = require("gulp-util");
 const plumber = require("gulp-plumber");
+const rename = require("gulp-rename");
 
 const sass = require("gulp-sass");
 const autoprefixer = require("gulp-autoprefixer");
 const minify = require("gulp-cssnano");
 
 const browserSync = require("browser-sync").create();
+
+const browserify = require("browserify");
+const watchify = require("watchify");
+const babelify = require("babelify");
+
+const uglify = require("gulp-uglify");
+const streamify = require("gulp-streamify");
+
+const source = require('vinyl-source-stream');
 const childProcess = require("child_process");
 
 // Set the path variables
@@ -23,8 +33,7 @@ const paths = {
 		dest: baseDest + "/css"
 	},
 	scripts: {
-		src: baseSrc + "/js/*.js",
-		watch: baseSrc + "/js/**/*.js",
+		src: baseSrc + "/js/main.js",
 		dest: baseDest + "/js"
 	},
 	images: {
@@ -32,6 +41,31 @@ const paths = {
 		dest: baseDest + "/img"
 	}
 };
+
+
+const watcher = browserify({
+	entries: [paths.scripts.src],
+	cache: {},
+	packageCache: {}
+}).plugin(watchify);
+
+watcher.on("update", () => {
+	return bundle(watcher)
+		.pipe(source("bundle.js"))
+		.pipe(gulp.dest(paths.scripts.dest));
+});
+
+
+
+function bundle(b) {
+	return b
+		.transform(babelify, {presets: ["es2015"]})
+		.bundle()
+		.on("error", (err) => {
+			return gutil.log(err);
+		});
+}
+
 
 gulp.task("styles", () => {
 	return gulp.src(paths.styles.src)
@@ -44,9 +78,17 @@ gulp.task("styles", () => {
 		.pipe(gulp.dest(paths.styles.dest));
 });
 
-gulp.task("scripts", () => {
-	return gulp.src(paths.scripts.src)
-		.pipe(plumber())
+gulp.task("scripts-build", () => {
+	return bundle(browserify(paths.scripts.src))
+		.pipe(source("bundle.js"))
+		.pipe(streamify(uglify()))
+		.pipe(gulp.dest(paths.scripts.dest));
+});
+
+gulp.task("scripts-watch", () => {
+	return bundle(watcher)
+		.pipe(source("bundle.js"))
+		.pipe(streamify(uglify()))
 		.pipe(gulp.dest(paths.scripts.dest));
 });
 
@@ -56,13 +98,13 @@ gulp.task("images", () => {
 		.pipe(gulp.dest(paths.images.dest));
 });
 
-gulp.task("jekyll-build", ["styles", "scripts", "images"], (done) => {
+gulp.task("jekyll-build", ["styles", "scripts-build", "images"], (done) => {
 	const jekyll = childProcess.spawn('bundle', [
 		'exec', 'jekyll', 'build'
 	], {stdio: 'inherit'}).on('close', done);
 });
 
-gulp.task("jekyll-watch", ["styles", "scripts", "images"], (done) => {
+gulp.task("jekyll-watch", ["styles", "images"], (done) => {
 	const jekyll = childProcess.spawn('bundle', [
 		'exec', 'jekyll', 'build',
 		'--watch',
@@ -86,12 +128,11 @@ gulp.task("serve", () => {
 	});
 
 	gulp.watch(paths.styles.watch, ["styles"]);
-	gulp.watch(paths.scripts.watch, ["scripts"]);
 	gulp.watch(paths.images.dir, ["images"]);
 });
 
 
-gulp.task("develop", ["jekyll-watch", "serve"]);
+gulp.task("develop", ["jekyll-watch", "scripts-watch", "serve"]);
 
 gulp.task("deploy", ["jekyll-build"]);
 
