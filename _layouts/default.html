@@ -5,10 +5,48 @@
 
 <body>
 
-	<div class="page-content">
+	<div class="page-content m-scene" id="main">
 		{{ content }}
 	</div>
 
+	<!--<script src="/assets/js/bundle.js"></script>-->
+	<script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+	<script src="https://raw.githubusercontent.com/miguel-perez/smoothState.js/master/jquery.smoothState.min.js"></script>
+
+	<script>
+		$(function(){
+		  'use strict';
+		  var $page = $('#main'),
+		  		$body = $('html, body'),
+		      options = {
+		        debug: false,
+		        prefetch: true,
+		        cacheLength: 2,
+		        onStart: {
+		          duration: 250, // Duration of our animation
+		          render: function ($container) {
+		            // Add your CSS animation reversing class
+		            $container.addClass('is-exiting');
+
+		           	$body.animate({ 'scrollTop': 0 });
+
+		            // Restart your animation
+		            smoothState.restartCSSAnimations();
+		          }
+		        },
+		        onReady: {
+		          duration: 0,
+		          render: function ($container, $newContent) {
+		            // Remove your CSS animation reversing class
+		            $container.removeClass('is-exiting');
+		            // Inject the new content
+		            $container.html($newContent);
+		          }
+		        }
+		      },
+		      smoothState = $page.smoothState(options).data('smoothState');
+		});
+	</script>
 </body>
 
 </html>
