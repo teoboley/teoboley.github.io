@@ -23,10 +23,10 @@ layout: portfolio
 <article id="project">
 
 	{% if page.image %}
-		<div id="project-image"></div>
+		<div id="project-image" class="scene_element scene_element--fadein"></div>
 	{% endif %}
 	<div id="project-body">
-		<div id="project-meta">
+		<div id="project-meta" class="scene_element scene_element--fadein">
 			<!-- date post was written -->
 			<div id="project-date" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
 				{{ page.date | date: "%b %Y" }}
