@@ -33,8 +33,5 @@
     "vinyl-source-stream": "^1.1.0",
     "watchify": "^3.7.0"
   },
-  "dependencies": {
-    "jquery": "^3.1.0",
-    "smoothstate": "^0.7.2"
-  }
+  "dependencies": {}
 }
