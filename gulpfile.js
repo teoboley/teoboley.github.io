@@ -78,6 +78,7 @@ gulp.task("styles", () => {
 		.pipe(gulp.dest(paths.styles.dest));
 });
 
+/*
 gulp.task("scripts-build", () => {
 	return bundle(browserify(paths.scripts.src))
 		.pipe(source("bundle.js"))
@@ -91,6 +92,7 @@ gulp.task("scripts-watch", () => {
 		.pipe(streamify(uglify()))
 		.pipe(gulp.dest(paths.scripts.dest));
 });
+*/
 
 gulp.task("images", () => {
 	return gulp.src(paths.images.src)
@@ -98,7 +100,7 @@ gulp.task("images", () => {
 		.pipe(gulp.dest(paths.images.dest));
 });
 
-gulp.task("jekyll-build", ["styles", "scripts-build", "images"], (done) => {
+gulp.task("jekyll-build", ["styles", "images"], (done) => {
 	const jekyll = childProcess.spawn('bundle', [
 		'exec', 'jekyll', 'build'
 	], {stdio: 'inherit'}).on('close', done);
@@ -132,7 +134,7 @@ gulp.task("serve", () => {
 });
 
 
-gulp.task("develop", ["jekyll-watch", "scripts-watch", "serve"]);
+gulp.task("develop", ["jekyll-watch", "serve"]);
 
 gulp.task("deploy", ["jekyll-build"]);
 
