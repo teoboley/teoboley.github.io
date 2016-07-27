@@ -7,7 +7,7 @@
 
 # Site settings
 title: Teo Boley
-email: your-email@domain.com
+email: teo@teoboley.com
 description: > # this means to ignore newlines until "baseurl:"
   Fonts BEYNO and Bonkers used in this site were created by Fabian Korn.  Check out his Behance and give him some love!
 baseurl: "" # the subpath of your site, e.g. /blog
