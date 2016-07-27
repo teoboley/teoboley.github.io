@@ -21,6 +21,16 @@
 	box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.5);
 }
 
+@mixin text-effect($direction, $color) {
+	$multiplier: 1;
+
+	@if $direction == left {
+		$multiplier: -1;
+	}
+
+	text-shadow: $multiplier*0.1em 0px rgba($color, 0.7), $multiplier*0.28em 0px rgba($color, 0.1);
+}
+
 
 
 // =============================================================================
@@ -31,7 +41,7 @@
   $index: str-index($string, $search);
 
   @if $index {
-    @return str-slice($string, 1, $index - 1) + $replace + str-replace(str-slice($string, $index + str-length($search)), $search, $replace);
+	@return str-slice($string, 1, $index - 1) + $replace + str-replace(str-slice($string, $index + str-length($search)), $search, $replace);
   }
 
   @return $string;
@@ -45,25 +55,25 @@
   $src: null;
 
   $extmods: (
-    eot: "?",
-    svg: "#" + str-replace($name, " ", "_")
+	eot: "?",
+	svg: "#" + str-replace($name, " ", "_")
   );
 
   $formats: (
-    otf: "opentype",
-    ttf: "truetype"
+	otf: "opentype",
+	ttf: "truetype"
   );
 
   @each $ext in $exts {
-    $extmod: if(map-has-key($extmods, $ext), $ext + map-get($extmods, $ext), $ext);
-    $format: if(map-has-key($formats, $ext), map-get($formats, $ext), $ext);
-    $src: append($src, url(quote($path + "." + $extmod)) format(quote($format)), comma);
+	$extmod: if(map-has-key($extmods, $ext), $ext + map-get($extmods, $ext), $ext);
+	$format: if(map-has-key($formats, $ext), map-get($formats, $ext), $ext);
+	$src: append($src, url(quote($path + "." + $extmod)) format(quote($format)), comma);
   }
 
   @font-face {
-    font-family: quote($name);
-    font-style: $style;
-    font-weight: $weight;
-    src: $src;
+	font-family: quote($name);
+	font-style: $style;
+	font-weight: $weight;
+	src: $src;
   }
 }

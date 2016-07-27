@@ -1,51 +1,53 @@
-.home {
-	.home-centered {
-		height: 180px;
-		@include centerer;
-		top: 40%;
+#home {
+	font-family: 'Open Sans', sans-serif;
+	overflow: hidden;
 
-		.home-title {
-			padding: 17px 2px 9px 23px;
-			margin: 0 auto;
-			text-align: center;
-			font-family: 'BEYNO';
-			background: white;
-			@include shadow-heavy;
+	.home-title {
+		font-weight: 800;
+		font-size: 250px;
+		color: white;
+		letter-spacing: 0.13em;
+		margin: 0px;
+	}
 
-			font-size: 2em;
-			letter-spacing: 24px;
-		}
-
-		.menu {
-			display: flex;
-			justify-content: space-between;
-			flex-wrap: wrap;
-			margin-top: 50px;
+	#home-title-top {
+		margin-bottom: 0px;
+		float: right;
+		margin-right: -140px;
+		
+		#home-title-left {
+			display: inline-block;
+			font-family: 'Open Sans', sans-serif;
+			font-weight: 600;
+			margin-right: 50px;
 
 			a {
-				font-family: 'Bonkers';
-				letter-spacing: 9px;
-				//position: absolute;
-				padding: 10px 6px 10px 14px;
 				color: white;
+				font-size: 30px;
+				letter-spacing: 0.4em;
 				text-decoration: none;
+				text-align: right;
+				display: block;
 			}
+		}
 
-			a:hover {
-				color: black;
-				background: white;
-				@include shadow-light;
-			}
+		#home-title-right {
+			display: inline-block;
+			@include text-effect(left, #87FFFD);
+		}
+	}
 
-			#menu-blog {
-				//left: 0px;
-				//bottom: 0px;
-			}
+	#home-title-bottom {
+		margin-left: -80px;
+		@include text-effect(right, #87FFFD);
+	}
 
-			#menu-portfolio {
-				//right: 0px;
-				//bottom: 0px;
-			}
+	#home-menu {
+
+		#menu-blog {
+		}
+
+		#menu-portfolio {
 		}
 	}
 }
