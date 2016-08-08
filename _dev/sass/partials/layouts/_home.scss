@@ -1,10 +1,15 @@
 #home {
 	font-family: 'Open Sans', sans-serif;
 	overflow: hidden;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	left: 0px;
 
 	.home-title {
 		font-weight: 800;
-		font-size: 250px;
+		font-size: 300px;
 		color: white;
 		letter-spacing: 0.13em;
 		margin: 0px;
@@ -19,7 +24,7 @@
 			display: inline-block;
 			font-family: 'Open Sans', sans-serif;
 			font-weight: 600;
-			margin-right: 50px;
+			margin-right: 100px;
 
 			a {
 				color: white;
@@ -38,6 +43,8 @@
 	}
 
 	#home-title-bottom {
+		float: left;
+		margin-top: -80px;
 		margin-left: -80px;
 		@include text-effect(right, #87FFFD);
 	}
