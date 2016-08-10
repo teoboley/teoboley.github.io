@@ -23,22 +23,25 @@
 
 			.post-meta {
 				display: flex;
-				justify-content: space-between;
-				flex-wrap: wrap;
-				margin: 0px 25px 15px 25px;
+				align-items: flex-end;
+				//justify-content: space-between;
+				//flex-wrap: wrap;
+				margin: 0px 0px 15px 0px;
 
-				font-family: 'Bonkers';
+				font-family: 'Open Sans', sans-serif;
 				letter-spacing: 4.61px;
 
 				.post-title {
-					flex-grow: 1;
+					//flex-grow: 1;
+					font-weight: 800;
 					color: white;
 					font-size: 1.5em;
 				}
 
 				.post-date {
-					margin-top: 5px;
-					color: #9B9B9B;
+					margin-left: 15px;
+					margin-bottom: 2px;
+					color: white;
 					text-align: right;
 				}
 			}
@@ -54,7 +57,7 @@
 					padding: 8px 25px 8px 25px;
 					border-radius: 0px 100px 100px 0px;
 
-					@include shadow-light;
+					//@include shadow-light;
 					
 					.post-image + .post-excerpt {
 						// there is an image
@@ -79,7 +82,7 @@
 						//position: absolute;
 						position: relative;
 
-						font-family: 'Helvetica';
+						font-family: 'Open Sans', sans-serif;
 						line-height: 1.2em;
 						color: dimgrey;
 						margin-left: 0px;
