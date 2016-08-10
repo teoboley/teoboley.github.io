@@ -9,16 +9,23 @@
 			</svg>
 			<span class="site-title">TEO BOLEY</span>
 		</a>
-		<a class="header-selected" href="/blog/">BLOG</a>
+		<a class="header-selected" href="/{{ include.selected }}/">{{ include.selected | upcase }}</a>
 
 		<nav>
 			<!-- other links -->
-			<a class="page-link" href="/portfolio/">
-				<span class="page-link-default">PORTFOLIO</span>
-				<span class="page-link-alt">P</span>
-				<svg width="20" height="20" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
-					<path class="nav-icon" d="M1363 877l-742 742q-19 19-45 19t-45-19l-166-166q-19-19-19-45t19-45l531-531-531-531q-19-19-19-45t19-45l166-166q19-19 45-19t45 19l742 742q19 19 19 45t-19 45z" fill="#fff"/>
-				</svg>
+			<a class="page-link" href="/{{ include.aux }}/">
+				{% if include.arrow == 'left' %}
+					<svg width="20" height="20" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path class="nav-icon" d="M1427 301l-531 531 531 531q19 19 19 45t-19 45l-166 166q-19 19-45 19t-45-19l-742-742q-19-19-19-45t19-45l742-742q19-19 45-19t45 19l166 166q19 19 19 45t-19 45z" fill="#fff"/></svg>
+					<span class="page-link-default">{{ include.aux | upcase }}</span>
+					<span class="page-link-alt">{{ include.aux | truncate: 1, "" }}</span>
+				{% else %}
+					<span class="page-link-default">{{ include.aux | upcase }}</span>
+					<span class="page-link-alt">{{ include.aux | truncate: 1, "" }}</span>
+					<!-- right arrow -->
+					<svg width="20" height="20" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+						<path class="nav-icon" d="M1363 877l-742 742q-19 19-45 19t-45-19l-166-166q-19-19-19-45t19-45l531-531-531-531q-19-19-19-45t19-45l166-166q19-19 45-19t45 19l742 742q19 19 19 45t-19 45z" fill="#fff"/>
+					</svg>
+				{% endif %}
 			</a>
 		</nav>
 	</div>
