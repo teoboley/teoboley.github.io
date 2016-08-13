@@ -1,60 +1,71 @@
 #home {
 	font-family: 'Open Sans', sans-serif;
-	overflow: hidden;
+	overflow-x: hidden;
+
 	position: absolute;
 	top: 0px;
 	right: 0px;
-	bottom: 0px;
+	//bottom: 0px;
 	left: 0px;
+	
+	#home-content {
+		display: flex;
+		flex-wrap: wrap;
+		//align-items: center;
 
-	.home-title {
-		font-weight: 800;
-		font-size: 300px;
-		color: white;
-		letter-spacing: 0.13em;
-		margin: 0px;
-	}
+		.home-title {
+			order: 1;
+			display: inline-block;
+			font-weight: 800;
+			//font-size: 300px;
+			font-size: 20vw;
+			color: white;
+			letter-spacing: 0.13em;
+			margin: 0px;
 
-	#home-title-top {
-		margin-bottom: 0px;
-		float: right;
-		margin-right: -140px;
+			@include breakpoint($smartphones) {
+				//font-size: 150px;
+			}
+		}
 		
-		#home-title-left {
+		#home-title-first {
+			margin-right: -0.4em;
+			//width: 75%;
+			text-align: right;
+			@include text-effect(left, #87FFFD);
+		}
+
+		#home-title-second {
+			margin-left: -0.28em;
+			width: 100%;
+			@include text-effect(right, #87FFFD);
+		}
+
+		#home-menu {
+			order: 0;
+			flex-grow: 1;
 			display: inline-block;
 			font-family: 'Open Sans', sans-serif;
 			font-weight: 600;
 			margin-right: 100px;
+
+			display:flex;
+			flex-direction: column;
+			align-items: flex-end;
+			justify-content: center;
+
 
 			a {
 				color: white;
 				font-size: 30px;
 				letter-spacing: 0.4em;
 				text-decoration: none;
-				text-align: right;
 				display: block;
 			}
-		}
 
-		#home-title-right {
-			display: inline-block;
-			@include text-effect(left, #87FFFD);
-		}
-	}
-
-	#home-title-bottom {
-		float: left;
-		margin-top: -80px;
-		margin-left: -80px;
-		@include text-effect(right, #87FFFD);
-	}
-
-	#home-menu {
-
-		#menu-blog {
-		}
-
-		#menu-portfolio {
+			@include breakpoint($smartphones) {
+				order: 2;
+			}
 		}
 	}
 }
