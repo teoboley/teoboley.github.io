@@ -2,71 +2,79 @@
 	position: fixed;
 	left: 0;
 	right: 0;
-	top: 0px;
+	top: 0;
 	z-index: 1000;
 	//background: linear-gradient(to bottom, rgba(black, 0.4), rgba(black, 0));
-
-	.header-content {
+	
+	> nav {
+		margin-top: 15px;
 		margin-left: gutter();
 		margin-right: gutter();
 
-		> nav {
-			padding-top: 15px;
-			
-			ul {
-			    margin: 0;
-			    padding: 0;
-			    display: flex;
-			    flex-wrap: wrap;
-			    justify-content: space-between;
-			    list-style: none;
+		ul {
+			padding: 0;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			list-style: none;
+			align-items: stretch;
 
-			    .page-link-alt {
-			    	display: none;
-			    }
+			li {
+				padding: 0px;
+				display: flex;
+				align-items: center;
 
-			    @include breakpoint($smartphones) {
-			    	.page-link-default {
-			    		display: none;
-			    	}
+				a {
+					color: white;
+					text-decoration: none;
+					font-family: 'Open Sans', sans-serif;
+					font-size: 18px;
+					font-weight: 300;
+					letter-spacing: 9px;
 
-			    	.page-link-alt {
-			    		display: inline;
-			    	}
-			    }
-			  }
+					.site-icon {
+						display: none;
+					}
+					
+					.site-title {
+						font-family: 'Open Sans', sans-serif;
+						font-weight: 800;
+						font-size: 24px;
+						@include text-effect(right, #87FFFD);
+					}
 
-			a {
-				color: white;
-				text-decoration: none;
-				font-family: 'Open Sans', sans-serif;
-				letter-spacing: 9px;
-			}
+					.page-link-alt {
+						display: none;
+					}
 
-			.site-icon {
-				display: none;
-				margin-top: -1px;
-			}
+					@include breakpoint($smartphones) {
+						.site-icon {
+							display: inline;
+						}
 
-			.site-title {
-				font-family: 'Open Sans', sans-serif;
-				font-weight: 800;
-				font-size: 24px;
-				@include text-effect(right, #87FFFD);
-			}
+						.site-title {
+							display: none;
+						}
 
-			@include breakpoint($smartphones) {
-				.site-icon {
-					display: inline;
+						.page-link-default {
+							display: none;
+						}
+
+						.page-link-alt {
+							display: inline;
+						}
+					}
 				}
 
-				.site-title {
-					display: none;
+				.header-selected {
+					font-size: 24px;
+					margin-left: 20px;
 				}
-			}
 
-			svg {
-				vertical-align:middle;
+				svg {
+					vertical-align:middle;
+					margin-top: -1px;
+				}
 			}
 		}
 	}
