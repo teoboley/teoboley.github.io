@@ -17,7 +17,7 @@
 
 		> h1 {
 			// Welcome Message
-			font-family: "BEYNO";
+			font-family: "Open Sans";
 			color: white;
 
 			font-size: 48px;
@@ -27,8 +27,8 @@
 
 		> p {
 			// Description
-			font-family: "Bonkers";
-			color: grey;
+			font-family: "Open Sans";
+			color: white;
 			letter-spacing: 2px;
 		}
 	}
@@ -64,9 +64,11 @@
 			}
 
 			a {
-				font-family: Bonkers;
-				letter-spacing: 2px;
-				color: lightgrey;
+				font-family: "Open Sans";
+				letter-spacing: 4px;
+				color: white;
+				font-weight: 600;
+				text-transform: uppercase;
 				text-decoration: none;
 			}
 
