@@ -4,8 +4,11 @@
 	right: 0;
 	top: 0;
 	z-index: 1000;
-	//background: linear-gradient(to bottom, rgba(black, 0.4), rgba(black, 0));
 	
+	&.shadow-enabled {
+		background: linear-gradient(to bottom, rgba(black, 0.4), rgba(black, 0));
+	}
+
 	> nav {
 		margin-top: 15px;
 		margin-left: gutter();
