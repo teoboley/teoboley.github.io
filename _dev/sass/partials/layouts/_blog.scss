@@ -57,7 +57,7 @@
 					padding: 8px 25px 8px 25px;
 					border-radius: 0px 100px 100px 0px;
 
-					//@include shadow-light;
+					@include shadow-light;
 					
 					.post-image + .post-excerpt {
 						// there is an image

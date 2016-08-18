@@ -18,7 +18,7 @@
 }
 
 @mixin shadow-light {
-	box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.5);
+	box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.2);
 }
 
 @mixin text-effect($direction, $color) {
