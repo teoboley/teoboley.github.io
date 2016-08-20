@@ -5,23 +5,35 @@
 	position: absolute;
 	top: 0px;
 	right: 0px;
-	//bottom: 0px;
+	bottom: 0px;
 	left: 0px;
+
+	@include breakpoint($smartphones) {
+		top: $margin-top-smartphones - 50px;
+	}
 	
 	#home-content {
 		display: flex;
 		flex-wrap: wrap;
-		//align-items: center;
+		align-items: stretch;
+		align-content: center;
+		height: 100%;
+
+		@include breakpoint($smartphones) {
+			align-content: flex-start;
+		}
 
 		.home-title {
 			order: 1;
 			display: inline-block;
 			font-weight: 800;
-			//font-size: 300px;
-			font-size: 20vw;
+			font-size: 300px;
+			font-size: 22vw;
 			color: white;
 			letter-spacing: 0.13em;
 			margin: 0px;
+			margin-top: -3vw;
+			margin-bottom: -3vw;
 
 			@include breakpoint($smartphones) {
 				//font-size: 150px;
@@ -30,15 +42,24 @@
 		
 		#home-title-first {
 			margin-right: -0.4em;
-			//width: 75%;
 			text-align: right;
 			@include text-effect(left, #87FFFD);
+
+			@include breakpoint($smartphones) {
+				width: 100%;
+				margin-right: span(1);
+			}
 		}
 
 		#home-title-second {
 			margin-left: -0.28em;
 			width: 100%;
 			@include text-effect(right, #87FFFD);
+
+			@include breakpoint($smartphones) {
+				width: 100%;
+				margin-left: span(1);
+			}
 		}
 
 		#home-menu {
@@ -48,12 +69,19 @@
 			font-family: 'Open Sans', sans-serif;
 			font-weight: 600;
 			margin-right: 100px;
+			margin-bottom: 3.5vw;
 
 			display:flex;
 			flex-direction: column;
 			align-items: flex-end;
-			justify-content: center;
+			justify-content: flex-end;
 
+			@include breakpoint($smartphones) {
+				margin: 0px;
+				margin-top: $margin-top-smartphones - 50px;
+				margin-left: span(1);
+				align-items: flex-start;
+			}
 
 			a {
 				color: white;
@@ -61,6 +89,11 @@
 				letter-spacing: 0.4em;
 				text-decoration: none;
 				display: block;
+
+				@include breakpoint($smartphones) {
+					font-size: 20px;
+					margin-top: 25px;
+				}
 			}
 
 			@include breakpoint($smartphones) {
