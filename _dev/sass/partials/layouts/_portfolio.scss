@@ -5,6 +5,19 @@
 		margin-top: $margin-top-smartphones;
 	}
 
+	#page-title {
+		position: fixed;
+		top: $margin-top-default/2 - 25px;
+		left: -0.2em;
+		margin: 0px;
+
+		font-family: OpenSans;
+		font-weight: 800;
+		font-size: 150px;
+		color: rgba(#FFFFFF, 0.1);
+		letter-spacing: 54.22px;
+	}
+
 	#welcome {
 		text-align: center;
 		margin-left: span(2);

@@ -1,22 +1,36 @@
 #blog {
-	margin-left: span(3);
-	margin-right: span(3);
 	margin-top: $margin-top-default;
 
-	@include breakpoint($tablets) {
-		margin-left: span(2);
-		margin-right: span(2);
-	}
+	#page-title {
+		position: fixed;
+		top: $margin-top-default/2 - 25px;
+		left: -0.2em;
+		margin: 0px;
 
-	@include breakpoint($smartphones) {
-		margin-left: span(1);
-		margin-right: span(1);
-		margin-top: $margin-top-smartphones;
+		font-family: OpenSans;
+		font-weight: 800;
+		font-size: 150px;
+		color: rgba(#FFFFFF, 0.1);
+		letter-spacing: 54.22px;
 	}
 
 	#post-list {
 		list-style: none;
 		padding: 0;
+		
+		margin-left: span(3);
+		margin-right: span(3);
+		
+		@include breakpoint($tablets) {
+			margin-left: span(2);
+			margin-right: span(2);
+		}
+
+		@include breakpoint($smartphones) {
+			margin-left: span(1);
+			margin-right: span(1);
+			margin-top: $margin-top-smartphones;
+		}
 
 		li {
 			margin-bottom: 50px;
