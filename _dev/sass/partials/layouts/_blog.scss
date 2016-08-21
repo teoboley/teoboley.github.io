@@ -1,17 +1,24 @@
 #blog {
 	margin-top: $margin-top-default;
 
+	@include breakpoint($smartphones) {
+		margin-top: $margin-top-smartphones;
+	}
+
 	#page-title {
 		position: fixed;
+		z-index: -1000;
 		top: $margin-top-default/2 - 25px;
 		left: -0.2em;
+		right: 0px;
 		margin: 0px;
 
 		font-family: OpenSans;
 		font-weight: 800;
-		font-size: 150px;
+		font-size: 175px; // 150px
 		color: rgba(#FFFFFF, 0.1);
-		letter-spacing: 54.22px;
+		letter-spacing: 0.25em;
+		word-wrap: break-word;
 	}
 
 	#post-list {
@@ -77,6 +84,10 @@
 						// there is an image
 
 						margin-left: 100px;
+
+						@include breakpoint($smartphones) {
+							margin-left: 50px;
+						}
 					}
 
 					.post-image {
@@ -89,6 +100,10 @@
 						background-size: cover;
 						background-repeat: no-repeat;
 						background-position: center center;
+
+						@include breakpoint($smartphones) {
+							width: 50px;
+						}
 					}
 
 					.post-excerpt {
