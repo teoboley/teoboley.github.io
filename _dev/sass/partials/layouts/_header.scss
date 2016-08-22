@@ -47,7 +47,7 @@
 					}
 
 					.page-link-alt {
-						display: none;
+						display: none !important;
 					}
 
 					@include breakpoint($smartphones) {
@@ -60,11 +60,11 @@
 						}
 
 						.page-link-default {
-							display: none;
+							display: none !important;
 						}
 
 						.page-link-alt {
-							display: inline;
+							display: inline-block !important;
 						}
 					}
 				}
@@ -72,6 +72,12 @@
 				.header-selected {
 					font-size: 24px;
 					margin-left: 20px;
+
+					@include link-effect-strong(white);
+				}
+
+				.page-link {
+					@include link-effect-strong(white);
 				}
 
 				svg {

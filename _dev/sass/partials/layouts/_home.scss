@@ -90,8 +90,9 @@
 				color: white;
 				font-size: 30px;
 				letter-spacing: 0.4em;
-				text-decoration: none;
-				display: block;
+				margin-top: 15px;
+
+				@include link-effect-strong(white);
 
 				@include breakpoint($smartphones) {
 					font-size: 20px;

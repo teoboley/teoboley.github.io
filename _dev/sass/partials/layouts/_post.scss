@@ -116,6 +116,8 @@
 
 			a {
 				color: initial;
+
+				@include link-effect-weak(slategray, black);
 			}
 
 			img {
