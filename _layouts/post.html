@@ -4,25 +4,19 @@ header-shadow: true
 ---
 
 <style>
-	.article-image {
+	.article-image, .article-image:after {
 		background-image:
-			-webkit-linear-gradient(
-				rgba(0, 0, 0, 0) 40%, 
-				rgba(0, 0, 0, 0.4)
-			),
-			url({{ page.image }});
-		background-image:
-			linear-gradient(
-				rgba(0, 0, 0, 0) 40%, 
-				rgba(0, 0, 0, 0.4)
-			),
 			url({{ page.image }});
 	}
 </style>
 
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 	{% if page.image %}
-		<div class="article-image scene_element scene_element--fadeindown"></div>
+		<div class="article-image-container scene_element scene_element--fadein">
+			<div class="article-image"></div>
+			<div class="article-image"></div>
+			<div class="article-image"></div>
+		</div>
 	{% endif %}
 	<div class="article-body scene_element scene_element--fadeinup">
 		<div class="article-meta">

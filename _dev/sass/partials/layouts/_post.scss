@@ -15,24 +15,56 @@
 		margin-top: $margin-top-smartphones;
 	}
 
-	.article-image {
+	.article-image-container {
 		position: absolute;
-		width: 100%;
 		top: 0px;
 		left: 0px;
 		right: 0px;
-		height: $margin-top-default*8/3;
-		@include breakpoint($smartphones) {
-			height: $margin-top-default*2;
-		}
-		z-index: -1;
 
-		background-size: cover;
-		background-repeat: no-repeat;
-		background-position: center center;
+		.article-image {
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			height: $margin-top-default*8/3;
+			@include breakpoint($smartphones) {
+				height: $margin-top-default*2;
+			}
+
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center center;
+		}
+
+		.article-image:before {
+			content: "";
+			display: block;
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			background:
+				linear-gradient(
+					rgba(0, 0, 0, 0) 40%, 
+					rgba(0, 0, 0, 0.4)
+				);
+		}
+
+		.article-image:nth-last-child(2) {
+			top: 20px;
+			opacity: 0.4;
+		}
+
+		.article-image:nth-last-child(3) {
+			top: 40px;
+			opacity: 0.1;
+		}
 	}
 
 	.article-body {
+		position: relative;
+		z-index: 1;
 		margin-left: span(3);
 		margin-right: span(3);
 
