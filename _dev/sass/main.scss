@@ -8,9 +8,10 @@
 
 // Import partials from `sass_dir` (defaults to `partials`)
 @import
+		"partials/variables",
+		"partials/functions",
 		"partials/mixins",
 		"partials/fonts",
-		"partials/variables",
 		"partials/base",
 		"partials/animations",
 		"partials/layout",

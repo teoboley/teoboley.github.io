@@ -43,7 +43,7 @@
 		#home-title-first {
 			margin-right: -0.4em;
 			text-align: right;
-			@include text-effect(left, #87FFFD);
+			text-shadow: text-effect(left, #87FFFD);
 
 			@include breakpoint($smartphones) {
 				text-align: left;
@@ -56,7 +56,7 @@
 		#home-title-second {
 			margin-left: -0.28em;
 			width: 100%;
-			@include text-effect(right, #87FFFD);
+			text-shadow: text-effect(right, #87FFFD);
 
 			@include breakpoint($smartphones) {
 				width: 100%;

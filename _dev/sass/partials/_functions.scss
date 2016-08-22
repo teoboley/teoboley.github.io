@@ -1,0 +1,10 @@
+// pseudo 3d text effect
+@function text-effect($direction, $color) {
+	$multiplier: 1;
+
+	@if $direction == left {
+		$multiplier: -1;
+	}
+
+	@return $multiplier*0.1em 0px rgba($color, 0.7), $multiplier*0.28em 0px rgba($color, 0.1);
+}

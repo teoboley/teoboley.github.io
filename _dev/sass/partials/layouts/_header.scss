@@ -43,7 +43,7 @@
 						font-family: 'Open Sans', sans-serif;
 						font-weight: 800;
 						font-size: 24px;
-						@include text-effect(right, #87FFFD);
+						text-shadow: text-effect(right, #87FFFD);
 					}
 
 					.page-link-alt {

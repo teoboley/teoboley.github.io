@@ -72,17 +72,6 @@
 	}
 }
 
-// pseudo 3d text effect
-@mixin text-effect($direction, $color) {
-	$multiplier: 1;
-
-	@if $direction == left {
-		$multiplier: -1;
-	}
-
-	text-shadow: $multiplier*0.1em 0px rgba($color, 0.7), $multiplier*0.28em 0px rgba($color, 0.1);
-}
-
 @mixin centerer($horizontal: true, $vertical: true) {
 	position: absolute;
 	@if ($horizontal and $vertical) {
