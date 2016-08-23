@@ -5,40 +5,38 @@ layout: portfolio
 <style>
 	#project-image {
 		background-image:
-			-webkit-linear-gradient(
-				rgba(0, 0, 0, 0.8), 
-				rgba(0, 0, 0, 0.8)
-			),
-			url({{ page.image }});
-		background-image:
-			linear-gradient(
-				rgba(0, 0, 0, 0.8), 
-				rgba(0, 0, 0, 0.8)
-			),
 			url({{ page.image }});
 	}
 </style>
 
-
+<div id="project-background" class="scene_element scene_element--fadeinup"></div>
 <article id="project">
-
-	{% if page.image %}
-		<div id="project-image" class="scene_element scene_element--fadein"></div>
-	{% endif %}
-	<div id="project-body">
-		<div id="project-meta" class="scene_element scene_element--fadein">
-			<!-- date post was written -->
-			<div id="project-date" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-				{{ page.date | date: "%b %Y" }}
-			</div>
-
-			<h1 id="project-title" itemprop="name headline">{{ page.title }}</h1>
+	<div id="project-meta" class="scene_element scene_element--fadein">
+		<!-- date post was written -->
+		<div id="project-date" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+			{{ page.date | date: "%b %Y" }}
 		</div>
 
-		<!-- Content -->
-		<div id="project-content" itemprop="articleBody">
-			{{ content }}
-		</div>
+		<h1 id="project-title" itemprop="name headline">{{ page.title }}</h1>
+		{% if page.image %}
+			<div id="project-image" class="scene_element scene_element--fadein"></div>
+		{% endif %}
 	</div>
 
+	<!-- Content -->
+	<div id="project-content" itemprop="articleBody">
+		{% if page.description %}
+		<section>
+			<span id="project-description" data-hover="{{ page.description }}">{{ page.description }}</span>
+		</section>
+		{% endif %}
+		{% assign sections = content | split: "<h1" %}
+		{% for section in sections %}
+			{% if forloop.first == false %}
+				<section>
+					{{ section | prepend: "<h1" }}
+				</section>
+			{% endif %}
+		{% endfor %}
+	</div>
 </article>

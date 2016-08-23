@@ -2,6 +2,7 @@
 title:  College Housing
 image: https://images.unsplash.com/photo-1445620466293-d6316372ab59?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=bccb92db735f108588edea0330bb2aca
 date: 2016-05-01
+description: College housing is a web app project created to help college students find affordable, good quality student housing.
 ---
 
 # Heading
@@ -11,6 +12,8 @@ You’ll find this post in your `_posts` directory. Go ahead and edit it and re-
 ## Heading 2
 
 To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+
+# Another Main Heading
 
 ### Heading 3
 

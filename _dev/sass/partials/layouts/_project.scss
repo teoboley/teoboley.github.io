@@ -1,74 +1,111 @@
-#project {
-	margin-top: $margin-top-default;
+#project-background {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	height: 100%;
 
-	@include breakpoint($smartphones) {
-		margin-top: $margin-top-smartphones;
-	}
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+#project {
 
 	#project-meta {
 		display: table;
 		font-family: 'Open Sans';
-		
 		margin: 0 auto;
+		color: white;
+		
+		margin-top: $margin-top-default;
 
+		@include breakpoint($smartphones) {
+			margin-top: $margin-top-smartphones;
+		}
 
 		#project-date {
-			color: darkgrey;
 			text-align: center;
-
-			letter-spacing: 10px;
+			letter-spacing: 0.2em;
 		}
 
 		#project-title {
-			display: inline-block;
 			text-align: center;
-
-			margin: 20px 0 0 0;
-			background: white;
-
-			@include shadow-light;
-			padding: 17px 2px 9px 23px;
-
-			font-size: 2em;
-			letter-spacing: 24px;
+			margin: 10px 0 0 0;
+			font-size: 48px;
+			font-weight: 800;
+			letter-spacing: 0.2em;
+			text-transform: uppercase;
 		}
-	}
 
-	#project-image {
-		position: fixed;
-		width: 100%;
-		height: 100%;
-		top: 0px;
-		left: 0px;
-		right: 0px;
-		bottom: 0px;
-		z-index: -1;
-	
-		filter: blur(10px);
-		background-size: cover;
-		background-repeat: no-repeat;
-		background-position: center center;
-	}
-
-	.device {
-		display: block;
-		max-width: 50%;
-		margin: 100px auto;
-		filter: drop-shadow(5);
-
-		@include breakpoint($smartphones) {
-			max-width: 90%;
+		#project-image {
+			width: 100%;
+			max-width: 700px;
+			height: 250px;
+			margin-top: 75px;
+			
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center center;
 		}
 	}
 
 	#project-content {
-		margin: 0 span(2);
+		position: absolute;
+		top: 100%;
+		left: 0px;
+		right: 0px;
+		
+		section {
+			display: block;
+			padding: 50px span(2);
 
-		@include breakpoint($smartphones) {
-			margin: 50px gutter() 50px gutter();
+			@include breakpoint($smartphones) {
+				padding: 50px span(1);
+			}
+
+			&:nth-of-type(odd) {
+				background: rgba(white, 0.15);
+			}
+
+			#project-description {
+				display: inline;
+
+				font-weight: 800;
+				font-size: 3vw;
+				line-height: 2em;
+				color: white;
+				box-shadow: 0px 10px 0 rgba(white, 0.25);
+
+				@include breakpoint($smartphones) {
+					font-size: 36px;
+				}
+			}
+
+			h1 {
+				font-size: 48px;
+				margin-top: 0px;
+			}
+
+			h2 {
+				font-size: 36px;
+			}
+
+			h3 {
+				font-size: 24px;
+			}
+
+			p {
+				color: rgba(white, 0.7);
+				font-size: 18px;
+			}
 		}
 
-		color: lightgrey;
+		@include breakpoint($smartphones) {
+			margin: 0px gutter() 0px gutter();
+		}
+
+		color: white;
 		font-family: Helvetica;
 
 		img {
