@@ -77,8 +77,14 @@
 					background: white;
 					padding: 8px 25px 8px 25px;
 					border-radius: 0px 100px 100px 0px;
+					transform: none;
+					transition: transform 0.3s;
 
 					@include shadow-light;
+
+					&:hover {
+						transform: translate3D(25px, 0, 0px);
+					}
 					
 					.post-image + .post-excerpt {
 						// there is an image
