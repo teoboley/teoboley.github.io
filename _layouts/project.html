@@ -7,6 +7,10 @@ layout: portfolio
 		background-image:
 			url({{ page.image }});
 	}
+	#project-background {
+		background-image:
+			url(../background.svg);
+	}
 </style>
 
 <div id="project-background" class="scene_element scene_element--fadeinup"></div>
@@ -19,7 +23,10 @@ layout: portfolio
 
 		<h1 id="project-title" itemprop="name headline">{{ page.title }}</h1>
 		{% if page.image %}
-			<div id="project-image" class="scene_element scene_element--fadein"></div>
+			<div id="project-image-container" class="scene_element scene_element--fadein">
+				<img src="{{ page.image }}"></img>
+				<img src="{{ page.image }}"></img>
+			</div>
 		{% endif %}
 	</div>
 
