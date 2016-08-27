@@ -16,8 +16,6 @@
 		font-family: 'Open Sans';
 		margin: 0 auto;
 		color: white;
-
-		flex-direction: column;
 		
 		margin-top: $margin-top-default;
 		margin-left: span(1);
@@ -43,6 +41,7 @@
 
 		#project-image-container {
 			position: relative;
+			display: block;
 
 			width: 100%;
 			max-width: 500px;
@@ -51,6 +50,11 @@
 			margin-top: 75px;
 			margin-left: auto;
 			margin-right: auto;
+			transition: filter 0.3s;
+
+			#project-image-hover {
+				display: none;
+			}
 
 			img {
 				position: absolute;
@@ -60,14 +64,37 @@
 				bottom: 0;
 				margin:auto;
 				width: 100%;
+				transition: width 0.3s, box-shadow 0.3s;
 
-				&:nth-child(1) {
+				&:nth-of-type(1) {
+					// bottom child
 					filter: opacity(20%);
 				}
 
-				&:nth-last-child(1) {
+				&:nth-last-of-type(1) {
+					// top child
 					width: 75%;
 					box-shadow: 0px 6px 20px 0px rgba(0,0,0,0.50);
+				}
+
+				@include breakpoint($smartphones) {
+					top: 200px;
+				}
+			}
+
+			&:hover {
+				filter: brightness(40%);
+				img {
+					&:nth-of-type(1) {
+						// bottom child
+						width: 95%;
+					}
+
+					&:nth-last-of-type(1) {
+						// top child
+						width: 85%;
+						box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.50);
+					}
 				}
 			}
 		}
