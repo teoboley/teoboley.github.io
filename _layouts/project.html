@@ -23,10 +23,13 @@ layout: portfolio
 
 		<h1 id="project-title" itemprop="name headline">{{ page.title }}</h1>
 		{% if page.image %}
-			<a id="project-image-container" class="scene_element scene_element--fadein">
+			<a id="project-image-container" class="scene_element scene_element--fadein" href="{{ page.link }}">
 				<img src="{{ page.image }}"></img>
 				<img src="{{ page.image }}"></img>
 				<div id="project-image-hover"></div>
+				{% if page.link %}
+					{% include export.svg %}
+				{% endif %}
 			</a>
 		{% endif %}
 	</div>

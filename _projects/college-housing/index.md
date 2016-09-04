@@ -1,6 +1,7 @@
 ---
 title:  College Housing
 image: https://images.unsplash.com/photo-1445620466293-d6316372ab59?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=bccb92db735f108588edea0330bb2aca
+link: https://google.com
 date: 2016-05-01
 description: College housing is a web app project created to help college students find affordable, good quality student housing.
 ---
@@ -34,6 +35,8 @@ end
 print_hi('Tom')
 #=> prints 'Hi, Tom' to STDOUT.
 {% endhighlight %}
+
+![alt text](/assets/img/background.png "Logo Title Text 1")
 
 #### Heading 4
 

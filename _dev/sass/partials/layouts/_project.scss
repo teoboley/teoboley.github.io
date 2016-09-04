@@ -50,10 +50,37 @@
 			margin-top: 75px;
 			margin-left: auto;
 			margin-right: auto;
-			transition: filter 0.3s;
+
+			@include breakpoint($smartphones) {
+				margin-top: 150px;
+			}
 
 			#project-image-hover {
 				display: none;
+			}
+
+			.export-icon {
+				position: absolute;
+				left: 0;
+				right: 0;
+				top: 150px;
+				bottom: 0;
+				margin: 0 auto;
+				
+				width: 30px;
+				height: 30px;
+
+				opacity: 0;
+				transition: opacity 0.3s, transform 0.3s;
+				transform: scale(0, 0);
+
+				path {
+					fill: black;
+				}
+
+				@include breakpoint($smartphones) {
+					top: 75px;
+				}
 			}
 
 			img {
@@ -64,7 +91,7 @@
 				bottom: 0;
 				margin:auto;
 				width: 100%;
-				transition: width 0.3s, box-shadow 0.3s;
+				transition: width 0.3s, box-shadow 0.3s, filter 0.3s;
 
 				&:nth-of-type(1) {
 					// bottom child
@@ -83,7 +110,14 @@
 			}
 
 			&:hover {
-				filter: brightness(40%);
+				cursor:pointer;
+				
+
+				.export-icon {
+					opacity: 1;
+					transform: scale(1, 1);
+				}
+
 				img {
 					&:nth-of-type(1) {
 						// bottom child
@@ -94,6 +128,7 @@
 						// top child
 						width: 85%;
 						box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.50);
+						filter: brightness(150%);
 					}
 				}
 			}
@@ -157,6 +192,15 @@
 				font-size: 18px;
 			}
 
+			a {
+				@include link-effect-weak(white, black);
+			}
+
+			img {
+				display: block;
+				margin: 50px;
+			}
+
 			.highlight {
 				display: inline-block;
 				// syntax highlighting
@@ -164,7 +208,10 @@
 				border-radius: 10px;
 				overflow: scroll;
 				text-align: initial;
-				margin: 0 auto;
+				margin: 30px auto;
+				max-width: 100%;
+
+				background-color: rgba(black, 0.5);
 
 				> pre {
 					margin-left: 10px;
@@ -175,6 +222,11 @@
 					> pre {
 						margin: 0px;
 					}
+				}
+
+				@include breakpoint($smartphones) {
+					display: block;
+					width: 90%;
 				}
 			}
 		}
