@@ -21,7 +21,7 @@ permalink: /portfolio/
 				<style>
 					.project-image {
 						background-image:
-							url({{ project.image }});
+							url({{ project.image | prepend: project.url}});
 					}
 				</style>
 				<a class="project-link" href="{{ project.url | prepend: site.baseurl }}">
